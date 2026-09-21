@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 150" role="img" aria-label="LexiCore">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#40528a"/><stop offset="1" stop-color="#5b71a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="150" rx="22" fill="#ffffff"/>
+  <g transform="translate(38,37)">
+    <rect width="76" height="76" rx="20" fill="url(#g)"/>
+    <path d="M22 20h9v29h16v9H22z" fill="#fff"/>
+    <circle cx="59" cy="27" r="6" fill="#cfe0ff"/>
+    <circle cx="59" cy="52" r="6" fill="#9fbcf2"/>
+  </g>
+  <text x="138" y="88" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="52" font-weight="600" fill="#1b1e27">LexiCore</text>
+  <text x="140" y="118" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="19" fill="#5c6270">5,000 English core words, ranked on 13.6&#160;billion</text>
+  <g font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="15" fill="#40528a">
+    <text x="470" y="88">A1 A2 B1 B2 C1</text>
+    <text x="470" y="112" fill="#8a7443">CC&#160;BY&#160;4.0</text>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+{
+  "note": "These checkpoint payloads are >100 MB (GitHub hard limit) and are therefore not committed; sizes and SHA-256 are recorded so a mirror can be verified.",
+  "files": {
+    "features.pkl": {
+      "bytes": 63306804,
+      "sha256": "9e8cc46ef8d13d198cd356b946fd700c90062a39c9aadd4e4524db174d7f55fe"
+    },
+    "labels.pkl": {
+      "bytes": 20974473,
+      "sha256": "985597cc1d17924c6a1c6621af546cbdfb5cedc250ca3c11ca9e0602735f20c1"
+    },
+    "selected.pkl": {
+      "bytes": 925158,
+      "sha256": "2928f7f2a8f7dd9ca19369c8176745ce6fea759b3fac05501d3df4f35eb1f473"
+    },
+    "src_cc2026.pkl": {
+      "bytes": 193147559,
+      "sha256": "2961960850b423a66058b158352f396700158cad268a31941f63ef1410532145"
+    },
+    "src_fineweb.pkl": {
+      "bytes": 234771611,
+      "sha256": "a0a8825e445a302977b274f637e49236bbdb9aa8e97bf4abe68ea03caacd4875"
+    },
+    "src_fwedu.pkl": {
+      "bytes": 28601461,
+      "sha256": "bef4d6eff65e4398bd9cf4a37862de34fd2fd1518c4b08cb0371113d62639a2e"
+    },
+    "src_subs.pkl": {
+      "bytes": 63886497,
+      "sha256": "efc2719f9155b494d5cd37cdf4f8cddc334f890f8a04523ed49b8b6e188765a6"
+    },
+    "src_wiki.pkl": {
+      "bytes": 133066397,
+      "sha256": "88a670b675314bd73de81c9b9b6616dcc9d01df098ea5ccd8082a56f2a70bdd1"
+    },
+    "surface_to_lemma.pkl": {
+      "bytes": 4326731,
+      "sha256": "6dedc4216f087b01ef1fe2bcd081e3a530a43f802b3b7ee45cf33be6159e94ae"
+    }
+  }
+}

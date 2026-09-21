@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use LexiCore-5000, please cite the dataset and the corpus evidence behind it."
+title: "LexiCore-5000: an open, evidence-ranked English core vocabulary list (A1-C1)"
+type: dataset
+version: 1.0.0
+date-released: 2026-09-14
+repository-code: "https://github.com/X-Trivle/LexiCore"
+url: "https://github.com/X-Trivle/LexiCore"
+abstract: >-
+  5,000 single-token English headwords, 1,000 per CEFR band (A1-C1), selected by a weighted
+  score over frequency, document dispersion, source balance and teaching-list utility measured
+  on 13,632,611,970 words from five corpora (FineWeb sample/10BT, FineWeb-Edu-score-2,
+  Wikipedia 20231101.en, OPUS-OpenSubtitles v2024, Common Crawl CC-MAIN-2026-34). Levels come
+  from CEFR-J v1.5 and the Octanove C1/C2 profile where published, and from a calibrated
+  multinomial logistic model for the remainder. Released under CC BY 4.0; see the repository's
+  KNOWN_ISSUES for the axes (recency, POS) that are not reliable in this version.
+license: CC-BY-4.0
+authors:
+  - name: "The LexiCore maintainers"
+    entity: true
+keywords:
+  - english
+  - vocabulary
+  - cefr
+  - wordlist
+  - frequency list
+  - corpus linguistics
+  - language learning
+preferred-citation:
+  type: software
+  title: "LexiCore: dataset, tooling and documentation"
+  version: 1.0.0
+  authors:
+    - name: "The LexiCore maintainers"
+      entity: true
+  repository-code: "https://github.com/X-Trivle/LexiCore"
+  license: CC-BY-4.0
