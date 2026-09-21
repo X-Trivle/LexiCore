@@ -15,17 +15,17 @@ make test          # 16 pytest cases
 
 ```
 [PASS ] columns                    expected 12 columns, got 12
-[PASS ] row_count                5000 rows (expected 5000)
-[PASS ] unique_headwords         5000 distinct
-[PASS ] level_quotas             A1=1000, A2=1000, B1=1000, B2=1000, C1=1000
-[PASS ] rank_integrity           contiguous per level and global
-[PASS ] value_ranges             counts>0, 0<=confidence<=1, 3<=n_sources<=5
-[PASS ] recency_columns_empty    0/5000 rows carry recency values (1.0.0 ships them empty; KI-2)
-[PASS ] label_mix                {'cefrj-v1.5': 3898, 'model:multinomial-logit-v1': 437, 'octanove-c1c2-v1.0': 665}
+[PASS ] row_count                  5000 rows (expected 5000)
+[PASS ] unique_headwords           5000 distinct
+[PASS ] level_quotas               A1=1000, A2=1000, B1=1000, B2=1000, C1=1000
+[PASS ] rank_integrity             contiguous per level and global
+[PASS ] value_ranges               counts>0, 0<=confidence<=1, 3<=n_sources<=5
+[PASS ] recency_columns_empty      0/5000 rows carry recency values (1.0.0 ships them empty; KI-2)
+[PASS ] label_mix                  {'cefrj-v1.5': 3898, 'model:multinomial-logit-v1': 437, 'octanove-c1c2-v1.0': 665}
 [PASS ] profile_confidence_constant 411 distinct values; 0.97 x3898 (CEFR-J cap), 0.95 x665 (Octanove cap) — KI-5
-[PASS ] pos_is_unreliable        noun=3598/5000 (72.0%) — heuristic POS, KI-3
-[PASS ] ubiquity                 4953 words in all 5 sources (99.06%)
-[PASS ] ledger                   53 files verified
+[PASS ] pos_is_unreliable          noun=3598/5000 (72.0%) — heuristic POS, KI-3
+[PASS ] ubiquity                   4953 words in all 5 sources (99.06%)
+[PASS ] ledger                     67 files verified
 ```
 
 The last four "expected" checks are **drift detectors**: they pass while the release still has
@@ -52,7 +52,7 @@ be updated in the same pull request. Hard checks fail CI; drift checks report, C
 | check | result |
 |---|---|
 | SHA-256 of the four release artefacts vs `MANIFEST.artifacts` | **4/4 match** (sizes too) |
-| SHA-256 ledger over all 53 committed files | **OK** |
+| SHA-256 ledger over every file under `data/`, `docs/`, `ecosystem/`, `reports/` | **OK** |
 | row count, uniqueness, per-level quota, rank permutations | 5,000 / 5,000 unique / 1,000 each / contiguous |
 | `Σ total_count` over the list | 9,705,062,231 = 71.2% of the claimed corpus |
 | `Σ total_f` over the 215,416 candidates vs claimed corpus | 13,327,211,431 = **97.75%** ✔ internally consistent |

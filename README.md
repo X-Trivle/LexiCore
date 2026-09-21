@@ -58,6 +58,12 @@ python -m lexicore validate                                   # the CI integrity
 python -m lexicore stats                                      # headline numbers
 ```
 
+For research you may also want the **release checkpoint** (743 MB of per-source counters, the full
+feature table, labels and the selection detail) — it is an asset of
+[release v1.0.0](https://github.com/X-Trivle/LexiCore/releases/tag/v1.0.0), not tree content, and
+`data/derived/` in this repository is a deterministic rebuild of the parts you are most likely to
+need.
+
 No dependency, no download step: the list is a plain CSV, so `curl` works too.
 
 ```bash

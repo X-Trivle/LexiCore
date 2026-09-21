@@ -36,7 +36,8 @@ semver-as-applied-to-data: **major** = words added/removed or levels changed,
 
 ### Added
 - Public repository packaging of the release: data, docs, tooling.
-- `data/SHA256SUMS.txt` integrity ledger over 53 files, plus `make checksums` / `make ledger`.
+- `data/SHA256SUMS.txt` integrity ledger over every data, docs, ecosystem and report file, plus
+  `make checksums` / `make ledger`.
 - `data/lists/` per-level handouts (rank order and alphabetical).
 - `data/derived/`: `candidate_features.csv.gz` (215,416 candidates × the full feature vector),
   `candidate_labels.csv.gz` (levels, sources, confidences, class probabilities),
@@ -47,7 +48,10 @@ semver-as-applied-to-data: **major** = words added/removed or levels changed,
 - 16 pytest cases: release contract + library behaviour, including loss-free CSV round-trip.
 - `docs/`: methodology, provenance (with live re-verification of source URLs/hashes), data
   dictionary, validation, known issues, reproduction guide, artefact ledger.
-- CI (GitHub Actions) running validate / test / lint on Python 3.10, 3.12, 3.13.
+- CI (GitHub Actions) running validate / ledger / test / lint / link-check on Python 3.10, 3.12, 3.13.
+- GitHub Release [`v1.0.0`](https://github.com/X-Trivle/LexiCore/releases/tag/v1.0.0) carrying the
+  374,861,085-byte release checkpoint as an asset (round-trip SHA-256 verified), so the payloads
+  excluded by GitHub's 100 MB file limit are still obtainable.
 - `ecosystem/lexideck-multilingual/`: the companion Anki deck (≈5,700 words = this list plus
   ~700 additions), its card model schema as measured from the free sample, and screenshots.
 

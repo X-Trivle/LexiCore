@@ -4,7 +4,7 @@
 
 | task | status | how |
 |---|---|---|
-| Verify the artefacts are the released ones | ✅ now | `make checksums` (53-file ledger + 4 manifest hashes) |
+| Verify the artefacts are the released ones | ✅ now | `make checksums` (ledger over `data/`, `docs/`, `ecosystem/`, `reports/` + the 4 manifest hashes) |
 | Verify the release contract (5,000 / 1,000 per level / ranks / ranges) | ✅ now | `make validate`, `make test` |
 | Rebuild `data/derived/` from a release checkpoint | ✅ now, byte-identical | `make derived CHECKPOINT=/path/to/checkpoint/out` |
 | Re-run **selection** with different weights over the released pool | ✅ now | `python -m lexicore reweight …` |
@@ -54,11 +54,13 @@ the `cc2026` records additionally carry `docs_seen`, `docs_en`, `docs_rejected_n
 ## The large pickles (not on GitHub)
 
 `out/src_*.pkl` etc. total 743,006,691 bytes and several exceed GitHub's 100 MB per-file limit,
-so they are **not** committed. Their sizes and SHA-256 are pinned in
-[`docs/checkpoint_artifacts.json`](checkpoint_artifacts.json); fetch the tarball from the release
-bucket and verify before use:
+so they are **not** committed to the tree. They ship as an asset of
+[release `v1.0.0`](https://github.com/X-Trivle/LexiCore/releases/tag/v1.0.0); per-file sizes and
+SHA-256 are pinned in [`docs/checkpoint_artifacts.json`](checkpoint_artifacts.json). Fetch and
+verify before use:
 
 ```bash
+curl -LO "https://github.com/X-Trivle/LexiCore/releases/download/v1.0.0/ckpt_lx5000v2_finalize_20260914T175041Z.tar.gz"
 sha256sum ckpt_lx5000v2_finalize_20260914T175041Z.tar.gz
 # expect 74aed1c2e249da6074dcc03ebbc00cfc4d1543efcbd8d080af0d8534acff26aa
 tar -tzf ckpt_*.tar.gz            # 44 entries
