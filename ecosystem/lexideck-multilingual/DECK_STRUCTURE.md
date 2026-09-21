@@ -7,6 +7,16 @@ marked *stated, not measured*.
 
 ## How to reproduce these numbers
 
+The file audited here: `application.apkg`, 5,877,461 bytes,
+SHA-256 `8338bafb1118d9fb98facdff3c6761a4675692365cfb1f786acac7a6e388fed1` (fetched 2026-09-21). A byte-identical mirror is attached to
+[release v1.0.0](https://github.com/X-Trivle/LexiCore/releases/download/v1.0.0/LexiDeck-Multilingual-free-sample-50-words.apkg) so the measurements stay reproducible if the product host rotates its
+asset URLs:
+
+```bash
+sha256sum application.apkg   # 8338bafb1118d9fb98facdff3c6761a4675692365cfb1f786acac7a6e388fed1
+```
+
+
 ```bash
 curl -LO "https://assets-2-prod.whop.com/public/uploads/2026-09-20/305d9e95-7a9d-44b1-8471-76eb2b4f8748/application.apkg"
 mkdir -p sample && cd sample && unzip -q ../application.apkg

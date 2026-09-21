@@ -10,6 +10,7 @@ and `order-*`, which is how the relationship can be checked rather than asserted
 |---|---|
 | Product page | <https://whop.com/lexideck/lexideck-multilingual/> |
 | Free 50-word sample (`.apkg`, 5,877,461 bytes) | [application.apkg](https://assets-2-prod.whop.com/public/uploads/2026-09-20/305d9e95-7a9d-44b1-8471-76eb2b4f8748/application.apkg) |
+| Sample mirror (release asset, link-stable) | [LexiDeck-Multilingual-free-sample-50-words.apkg](https://github.com/X-Trivle/LexiCore/releases/download/v1.0.0/LexiDeck-Multilingual-free-sample-50-words.apkg) · SHA-256 `8338bafb1118d9fb98facdff3c6761a4675692365cfb1f786acac7a6e388fed1` |
 | Vocabulary base | [`data/LexiCore_5000.csv`](../../data/LexiCore_5000.csv) + ~700 additions ([ADDITIONS.md](ADDITIONS.md)) |
 
 This folder documents the deck inside the dataset repository because the deck is the main thing

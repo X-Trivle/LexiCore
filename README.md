@@ -181,6 +181,7 @@ to teachers. Summary — full detail in **[docs/KNOWN_ISSUES.md](docs/KNOWN_ISSU
 
 **Product page:** <https://whop.com/lexideck/lexideck-multilingual/>
 **Free 50-word sample:** [application.apkg](https://assets-2-prod.whop.com/public/uploads/2026-09-20/305d9e95-7a9d-44b1-8471-76eb2b4f8748/application.apkg) *(5,877,461 bytes, verified live)*
+**Sample mirror (this repo's release asset, so the link cannot rot):** [LexiDeck-Multilingual-free-sample-50-words.apkg](https://github.com/X-Trivle/LexiCore/releases/download/v1.0.0/LexiDeck-Multilingual-free-sample-50-words.apkg) *(5,877,461 bytes, SHA-256 `8338bafb1118d9fb…`, byte-identical to the file served by the product page)*
 **In this repository:** [README of the deck](ecosystem/lexideck-multilingual/README.md) ·
 [measured card structure](ecosystem/lexideck-multilingual/DECK_STRUCTURE.md) ·
 [the ~700 additions](ecosystem/lexideck-multilingual/ADDITIONS.md) ·
