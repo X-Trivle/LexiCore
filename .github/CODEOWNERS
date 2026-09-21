@@ -1,0 +1,6 @@
+# Data changes need a second pair of eyes: they change what everyone else cites.
+/data/       @X-Trivle
+/src/        @X-Trivle
+/docs/       @X-Trivle
+/ecosystem/  @X-Trivle
+/.github/    @X-Trivle
