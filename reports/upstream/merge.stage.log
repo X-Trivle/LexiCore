@@ -1,0 +1,36 @@
+[17:17:00] fineweb tokens: 7,545,397,544 docs: 14,853,888 files: 115 types: 513549
+[17:17:01] fwedu tokens: 1,509,381,045 docs: 2,020,431 files: 18 types: 316586
+[17:17:06] wiki tokens: 2,172,583,977 docs: 5,428,305 files: 110 types: 431374
+[17:17:08] subs tokens: 1,103,261,872 docs: 198,800,294 files: 1 types: 148164
+[17:17:15] cc2026 tokens: 1,301,987,532 docs: 1,549,435 files: 128 types: 490599
+[17:17:15] union surface types: 1,034,148 | total words: 13,632,611,970
+[17:26:44] lemmatization keep-surface set: 2,911,695 (inflected forms added: 4,506,797)
+[17:26:45] surface types requiring lemma resolution: 283,502 of 1,034,148
+[17:26:45] lemma chunks to compute: 15
+[17:26:57] lemmatized 200,000 types
+[17:27:00] lemma map complete: 283,502 types
+[17:27:06] merge live -> lexicore-20260914-cb17ed: VERIFIED
+[17:27:11] merge live -> lexicore-20260914-cb17ed: VERIFIED
+[17:27:12] merge live -> lexicore-mirror-20260914-afecdd: VERIFIED
+[17:27:17] merge live -> lexicore-mirror-20260914-afecdd: VERIFIED
+[17:30:08] features table rows: 215416
+{
+  "elapsed_s": 804.6,
+  "candidate_lemmas": 215416,
+  "source_words": {
+    "fineweb": 7545397544,
+    "fwedu": 1509381045,
+    "wiki": 2172583977,
+    "subs": 1103261872,
+    "cc2026": 1301987532
+  },
+  "total_words": 13632611970,
+  "files_per_source": {
+    "fineweb": 115,
+    "fwedu": 18,
+    "wiki": 110,
+    "subs": 1,
+    "cc2026": 128
+  }
+}
+[run 17:30:08] stage merge done in 804.8s

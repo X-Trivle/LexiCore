@@ -1,0 +1,63 @@
+{
+  "generated_utc": "2026-09-21T14:19:15+00:00",
+  "source": "/home/user/dl/x/out",
+  "feature_columns": [
+    "word",
+    "n_sources",
+    "agg_lppm",
+    "disp",
+    "src_entropy",
+    "total_f",
+    "held_count",
+    "wf_zipf2021",
+    "ngsl_band",
+    "ngsl_rank",
+    "recent_share",
+    "newest_share",
+    "in_cefrj",
+    "in_oct",
+    "ngsl_spoken",
+    "nawl",
+    "bsl",
+    "bnc_band"
+  ],
+  "per_source_columns": [
+    "ppm_cc2026",
+    "ppm_fineweb",
+    "ppm_fwedu",
+    "ppm_subs",
+    "ppm_wiki",
+    "dfr_cc2026",
+    "dfr_fineweb",
+    "dfr_fwedu",
+    "dfr_subs",
+    "dfr_wiki",
+    "dp_cc2026",
+    "dp_fineweb",
+    "dp_fwedu",
+    "dp_subs",
+    "dp_wiki",
+    "range_cc2026",
+    "range_fineweb",
+    "range_fwedu",
+    "range_subs",
+    "range_wiki"
+  ],
+  "files": {
+    "surface_to_lemma.csv.gz": {
+      "rows": 283502,
+      "bytes": 1356065,
+      "sha256": "834e98e5b857e5fc9fb187d4d810748562c702302a12eb9d629ca1a42b0be49c"
+    },
+    "candidate_features.csv.gz": {
+      "rows": 215416,
+      "bytes": 30736921,
+      "sha256": "dd0e7183c7be94a8c975ebc9a9a754f3b093fb20a97ec1c7215f1c50156283e8"
+    },
+    "candidate_labels.csv.gz": {
+      "rows": 215416,
+      "bytes": 4233089,
+      "sha256": "c816fe92ed9bba4a6bf46ae538e4d57d19877469fcfe0cd846ea2c02cb406c0f"
+    }
+  }
+}

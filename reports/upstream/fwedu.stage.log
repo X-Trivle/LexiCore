@@ -1,0 +1,16 @@
+[14:22:33] fwedu: downloading 4 shards ...
+[14:24:28] fwedu: 14 new chunks (4 shards, psh=32); starting workers
+[14:31:25] fwedu chunks 3: 206,769,429 words
+[14:31:42] live backup fwedu -> lexicore-20260914-cb17ed: VERIFIED
+[14:31:46] live backup fwedu -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:32:20] fwedu chunks 6: 555,603,634 words
+[14:32:29] fwedu chunks 9: 899,507,676 words
+[14:32:32] live backup fwedu -> lexicore-20260914-cb17ed: VERIFIED
+[14:32:36] live backup fwedu -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:32:38] live backup fwedu -> lexicore-20260914-cb17ed: VERIFIED
+[14:32:42] live backup fwedu -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:32:46] fwedu chunks 12: 1,243,741,771 words
+[14:32:54] live backup fwedu -> lexicore-20260914-cb17ed: VERIFIED
+[14:32:57] live backup fwedu -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:33:07] fwedu COMPLETE: 1,509,381,045 words, 2,020,431 docs, 14 chunks
+[run 14:33:07] stage fwedu done in 638.0s

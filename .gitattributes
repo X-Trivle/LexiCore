@@ -1,0 +1,17 @@
+# Default: normalise text to LF in the working tree.
+* text=auto eol=lf
+
+# Release artefacts are byte-exact documents: their SHA-256 ledger must survive any
+# clone on any platform, so no line-ending conversion is ever applied to them.
+data/** -text
+reports/upstream/** -text
+
+# Binaries
+*.gz binary
+*.png binary
+*.jpg binary
+*.svg text eol=lf
+
+# Generated / vendored content: hide from language stats, still reviewable
+data/derived/** linguist-generated=true
+reports/upstream/** linguist-generated=true

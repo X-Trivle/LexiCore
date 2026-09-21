@@ -1,0 +1,74 @@
+[13:00:29] fineweb: downloading 15 shards ...
+[13:05:18] fineweb: 100 new chunks (15 shards, psh=8); starting workers
+[13:15:55] fineweb chunks 3: 123,514,526 words
+[13:16:17] live backup fineweb -> lexicore-20260914-cb17ed: VERIFIED
+[13:16:24] live backup fineweb -> lexicore-mirror-20260914-afecdd: VERIFIED
+[13:33:15] fineweb chunks 6: 366,428,955 words
+[13:33:52] live backup error fineweb unexpected end of data
+[13:34:22] fineweb chunks 9: 608,154,809 words
+[13:34:27] fineweb chunks 12: 851,917,616 words
+[13:34:34] live backup error fineweb unexpected end of data
+[13:36:50] live backup fineweb -> lexicore-20260914-cb17ed: VERIFIED
+[13:36:51] fineweb chunks 15: 1,055,031,089 words
+[13:37:02] live backup fineweb -> lexicore-mirror-20260914-afecdd: VERIFIED
+[13:37:46] live backup error fineweb unexpected end of data
+[13:38:28] fineweb chunks 18: 1,299,118,575 words
+[13:39:03] live backup error fineweb unexpected end of data
+[13:39:54] fineweb chunks 21: 1,542,485,323 words
+[13:40:27] live backup error fineweb unexpected end of data
+[13:41:13] fineweb chunks 24: 1,741,843,122 words
+[13:41:37] live backup error fineweb unexpected end of data
+[13:42:35] fineweb chunks 27: 1,986,589,125 words
+[13:43:25] live backup error fineweb unexpected end of data
+[13:44:16] fineweb chunks 30: 2,230,345,972 words
+[13:45:13] live backup error fineweb unexpected end of data
+[13:45:49] fineweb chunks 33: 2,473,926,097 words
+[13:46:24] live backup error fineweb unexpected end of data
+[13:46:59] fineweb chunks 36: 2,718,600,686 words
+[13:47:38] live backup error fineweb unexpected end of data
+[13:48:25] fineweb chunks 39: 2,963,275,350 words
+[13:49:21] live backup error fineweb unexpected end of data
+[13:49:26] fineweb chunks 42: 3,208,738,203 words
+[13:51:33] fineweb chunks 45: 3,412,318,107 words
+[13:51:55] live backup fineweb -> lexicore-20260914-cb17ed: VERIFIED
+[13:52:03] live backup error fineweb unexpected end of data
+[13:52:13] fineweb chunks 48: 3,656,668,156 words
+[13:52:35] live backup fineweb -> lexicore-mirror-20260914-afecdd: VERIFIED
+[13:54:07] live backup fineweb -> lexicore-20260914-cb17ed: VERIFIED
+[13:54:10] fineweb chunks 51: 3,858,902,315 words
+[13:54:58] live backup error fineweb unexpected end of data
+[13:55:10] live backup fineweb -> lexicore-mirror-20260914-afecdd: VERIFIED
+[13:55:15] fineweb chunks 54: 4,056,798,496 words
+[13:56:14] live backup error fineweb unexpected end of data
+[13:56:38] fineweb chunks 57: 4,302,925,811 words
+[13:57:50] live backup error fineweb unexpected end of data
+[13:58:21] fineweb chunks 60: 4,506,400,461 words
+[13:59:13] live backup error fineweb unexpected end of data
+[13:59:44] fineweb chunks 63: 4,709,261,271 words
+[14:00:40] live backup error fineweb unexpected end of data
+[14:01:10] fineweb chunks 66: 4,955,606,947 words
+[14:03:08] live backup error fineweb unexpected end of data
+[14:03:46] fineweb chunks 69: 5,155,251,838 words
+[14:07:22] live backup error fineweb unexpected end of data
+[14:07:55] fineweb chunks 72: 5,353,800,915 words
+[14:09:00] live backup error fineweb unexpected end of data
+[14:09:35] fineweb chunks 75: 5,602,296,042 words
+[14:11:08] live backup error fineweb unexpected end of data
+[14:11:47] fineweb chunks 78: 5,802,335,595 words
+[14:12:42] live backup error fineweb unexpected end of data
+[14:13:12] fineweb chunks 81: 6,049,870,423 words
+[14:13:58] live backup error fineweb unexpected end of data
+[14:14:18] fineweb chunks 84: 6,297,713,216 words
+[14:14:46] live backup error fineweb unexpected end of data
+[14:14:59] fineweb chunks 87: 6,544,657,774 words
+[14:15:19] live backup error fineweb unexpected end of data
+[14:15:29] fineweb chunks 90: 6,792,232,299 words
+[14:15:43] live backup error fineweb unexpected end of data
+[14:15:49] fineweb chunks 93: 6,997,465,547 words
+[14:15:59] live backup error fineweb unexpected end of data
+[14:16:05] fineweb chunks 96: 7,219,833,147 words
+[14:16:14] live backup error fineweb unexpected end of data
+[14:16:20] fineweb chunks 99: 7,463,501,129 words
+[14:16:30] live backup error fineweb unexpected end of data
+[14:16:36] fineweb COMPLETE: 7,545,397,544 words, 14,853,888 docs, 100 chunks
+[run 14:16:37] stage fineweb done in 4569.3s

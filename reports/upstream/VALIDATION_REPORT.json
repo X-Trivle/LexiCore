@@ -1,0 +1,112 @@
+{
+  "validation": {
+    "exactly_TOTAL": true,
+    "unique": true,
+    "all_valid_words": true,
+    "one_level_each": true,
+    "level_counts": {
+      "A1": 1000,
+      "A2": 1000,
+      "B1": 1000,
+      "B2": 1000,
+      "C1": 1000
+    },
+    "problems": [],
+    "direct_vs_model_labels": {
+      "cefrj-v1.5": 3898,
+      "model": 437,
+      "octanove-c1c2-v1.0": 665
+    }
+  },
+  "stats": {
+    "words_analyzed": {
+      "fineweb": 7545397544,
+      "fwedu": 1509381045,
+      "wiki": 2172583977,
+      "subs": 1103261872,
+      "cc2026": 1301987532
+    },
+    "total_words": 13632611970,
+    "files_processed": {
+      "fineweb": 115,
+      "fwedu": 18,
+      "wiki": 110,
+      "subs": 1,
+      "cc2026": 128
+    },
+    "source_presence_distribution": {
+      "5": 4953,
+      "4": 46,
+      "3": 1
+    },
+    "pct_in_all_5_sources": 99.06,
+    "pct_in_4plus": 99.98,
+    "mean_recent_share": NaN,
+    "mean_newest_2025_26_share": NaN,
+    "confidence_mean": 0.9205,
+    "held_out_coverage": {
+      "fineweb": {
+        "held_words": 7565444,
+        "covered": 5719128,
+        "coverage": 0.756
+      },
+      "fwedu": {
+        "held_words": 1517451,
+        "covered": 1121024,
+        "coverage": 0.7388
+      },
+      "wiki": {
+        "held_words": 2283599,
+        "covered": 1504095,
+        "coverage": 0.6587
+      },
+      "subs": {
+        "held_words": 1102508,
+        "covered": 913927,
+        "coverage": 0.829
+      },
+      "cc2026": {
+        "held_words": 1216026,
+        "covered": 664997,
+        "coverage": 0.5469
+      },
+      "overall": {
+        "held_words": 13685028,
+        "covered": 9923171,
+        "coverage": 0.7251
+      }
+    }
+  },
+  "held_out_coverage": {
+    "fineweb": {
+      "held_words": 7565444,
+      "covered": 5719128,
+      "coverage": 0.756
+    },
+    "fwedu": {
+      "held_words": 1517451,
+      "covered": 1121024,
+      "coverage": 0.7388
+    },
+    "wiki": {
+      "held_words": 2283599,
+      "covered": 1504095,
+      "coverage": 0.6587
+    },
+    "subs": {
+      "held_words": 1102508,
+      "covered": 913927,
+      "coverage": 0.829
+    },
+    "cc2026": {
+      "held_words": 1216026,
+      "covered": 664997,
+      "coverage": 0.5469
+    },
+    "overall": {
+      "held_words": 13685028,
+      "covered": 9923171,
+      "coverage": 0.7251
+    }
+  }
+}

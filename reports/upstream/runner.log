@@ -1,0 +1,138 @@
+[12:59:33] restoring latest remote checkpoint: ckpt_lx5000v2_env_20260914T123924Z.tar.gz
+[12:59:36] restore failed, starting fresh: cannot access local variable 'tarfile' where it is not associated with a value
+[12:59:36] === env attempt 1 ===
+[13:00:13] stage env OK in 37s
+[13:00:17] VERIFIED ckpt_lx5000v2_env_20260914T130013Z.tar.gz 0.0MB
+[13:00:21] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 0.0MB
+[13:00:24] VERIFIED ckpt_lx5000v2_env_20260914T130013Z.tar.gz 0.0MB
+[13:00:28] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 0.0MB
+[13:00:28] === fineweb attempt 1 ===
+[14:16:37] stage fineweb OK in 4569s
+[14:20:25] restore complete; done flags: ['env.flag', 'fineweb.flag']
+[14:20:26] === env attempt 1 ===
+[14:20:26] skip (done): env
+[14:21:13] VERIFIED ckpt_lx5000v2_env_20260914T142026Z.tar.gz 123.2MB
+[14:21:20] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 123.2MB
+[14:21:27] VERIFIED ckpt_lx5000v2_env_20260914T142026Z.tar.gz 123.2MB
+[14:21:34] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 123.2MB
+[14:21:34] === fineweb attempt 1 ===
+[14:21:34] skip (done): fineweb
+[14:22:07] VERIFIED ckpt_lx5000v2_fineweb_20260914T142134Z.tar.gz 123.2MB
+[14:22:14] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 123.2MB
+[14:22:23] VERIFIED ckpt_lx5000v2_fineweb_20260914T142134Z.tar.gz 123.2MB
+[14:22:29] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 123.2MB
+[14:22:29] === fwedu attempt 1 ===
+[14:33:07] stage fwedu OK in 638s
+[14:33:48] VERIFIED ckpt_lx5000v2_fwedu_20260914T143307Z.tar.gz 138.6MB
+[14:33:56] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 138.6MB
+[14:34:03] VERIFIED ckpt_lx5000v2_fwedu_20260914T143307Z.tar.gz 138.6MB
+[14:34:10] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 138.6MB
+[14:34:10] === wiki attempt 1 ===
+[14:55:29] stage wiki OK in 1280s
+[14:56:34] VERIFIED ckpt_lx5000v2_wiki_20260914T145529Z.tar.gz 208.7MB
+[14:56:42] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 208.7MB
+[14:56:51] VERIFIED ckpt_lx5000v2_wiki_20260914T145529Z.tar.gz 208.7MB
+[14:57:00] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 208.7MB
+[14:57:00] === subs attempt 1 ===
+[15:16:35] stage subs OK in 1175s
+[15:38:30] restore complete; done flags: ['env.flag', 'fwedu.flag', 'subs.flag', 'fineweb.flag', 'wiki.flag']
+[15:38:30] === env attempt 1 ===
+[15:38:30] skip (done): env
+[15:40:36] VERIFIED ckpt_lx5000v2_env_20260914T153830Z.tar.gz 240.4MB
+[15:41:32] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 240.4MB
+[15:42:13] VERIFIED ckpt_lx5000v2_env_20260914T153830Z.tar.gz 240.4MB
+[15:43:48] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 240.4MB
+[15:43:48] === fineweb attempt 1 ===
+[15:43:48] skip (done): fineweb
+[15:45:34] VERIFIED ckpt_lx5000v2_fineweb_20260914T154348Z.tar.gz 240.4MB
+[15:46:36] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 240.4MB
+[15:47:18] VERIFIED ckpt_lx5000v2_fineweb_20260914T154348Z.tar.gz 240.4MB
+[15:47:55] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 240.4MB
+[15:47:55] === fwedu attempt 1 ===
+[15:47:55] skip (done): fwedu
+[15:50:07] VERIFIED ckpt_lx5000v2_fwedu_20260914T154755Z.tar.gz 240.4MB
+[15:51:02] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 240.4MB
+[15:51:46] VERIFIED ckpt_lx5000v2_fwedu_20260914T154755Z.tar.gz 240.4MB
+[15:52:30] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 240.4MB
+[15:52:30] === wiki attempt 1 ===
+[15:52:30] skip (done): wiki
+[15:54:03] VERIFIED ckpt_lx5000v2_wiki_20260914T155230Z.tar.gz 240.4MB
+[15:54:55] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 240.4MB
+[15:55:33] VERIFIED ckpt_lx5000v2_wiki_20260914T155230Z.tar.gz 240.4MB
+[15:56:21] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 240.4MB
+[15:56:21] === subs attempt 1 ===
+[15:56:21] skip (done): subs
+[15:57:56] VERIFIED ckpt_lx5000v2_subs_20260914T155621Z.tar.gz 240.4MB
+[15:58:34] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 240.4MB
+[15:59:10] VERIFIED ckpt_lx5000v2_subs_20260914T155621Z.tar.gz 240.4MB
+[15:59:47] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 240.4MB
+[15:59:47] === cc2026 attempt 1 ===
+[16:27:39] stage cc2026 OK in 1673s
+[16:52:07] restore complete; done flags: ['fwedu.flag', 'env.flag', 'cc2026.flag', 'subs.flag', 'wiki.flag', 'fineweb.flag']
+[16:52:08] === env attempt 1 ===
+[16:52:08] skip (done): env
+[16:55:10] VERIFIED ckpt_lx5000v2_env_20260914T165208Z.tar.gz 339.3MB
+[16:56:21] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 339.3MB
+[16:57:00] VERIFIED ckpt_lx5000v2_env_20260914T165208Z.tar.gz 339.3MB
+[16:57:39] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 339.3MB
+[16:57:39] === setup attempt 1 ===
+[16:57:42] stage setup OK in 3s
+[17:00:37] VERIFIED ckpt_lx5000v2_setup_20260914T165742Z.tar.gz 339.3MB
+[17:01:44] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 339.3MB
+[17:02:48] VERIFIED ckpt_lx5000v2_setup_20260914T165742Z.tar.gz 339.3MB
+[17:03:46] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 339.3MB
+[17:03:46] === fineweb attempt 1 ===
+[17:03:46] skip (done): fineweb
+[17:06:49] VERIFIED ckpt_lx5000v2_fineweb_20260914T170346Z.tar.gz 339.3MB
+[17:07:48] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 339.3MB
+[17:08:26] VERIFIED ckpt_lx5000v2_fineweb_20260914T170346Z.tar.gz 339.3MB
+[17:09:30] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 339.3MB
+[17:09:30] === fwedu attempt 1 ===
+[17:09:30] skip (done): fwedu
+[17:12:04] VERIFIED ckpt_lx5000v2_fwedu_20260914T170930Z.tar.gz 339.3MB
+[17:12:55] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 339.3MB
+[17:13:52] VERIFIED ckpt_lx5000v2_fwedu_20260914T170930Z.tar.gz 339.3MB
+[17:14:46] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 339.3MB
+[17:14:46] === wiki attempt 1 ===
+[17:14:46] skip (done): wiki
+[17:16:43] === env attempt 1 ===
+[17:16:43] skip (done): env
+[17:16:43] giving up on env
+[17:16:43] === setup attempt 1 ===
+[17:16:43] skip (done): setup
+[17:16:43] giving up on setup
+[17:16:43] === fineweb attempt 1 ===
+[17:16:43] skip (done): fineweb
+[17:16:43] giving up on fineweb
+[17:16:43] === fwedu attempt 1 ===
+[17:16:43] skip (done): fwedu
+[17:16:43] giving up on fwedu
+[17:16:43] === wiki attempt 1 ===
+[17:16:43] skip (done): wiki
+[17:16:43] giving up on wiki
+[17:16:43] === subs attempt 1 ===
+[17:16:43] skip (done): subs
+[17:16:43] giving up on subs
+[17:16:43] === cc2026 attempt 1 ===
+[17:16:43] skip (done): cc2026
+[17:16:43] giving up on cc2026
+[17:16:43] === merge attempt 1 ===
+[17:30:21] stage merge OK in 818s
+[17:33:11] VERIFIED ckpt_lx5000v2_merge_20260914T173021Z.tar.gz 368.5MB
+[17:34:05] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 368.5MB
+[17:34:59] VERIFIED ckpt_lx5000v2_merge_20260914T173021Z.tar.gz 368.5MB
+[17:35:57] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 368.5MB
+[17:35:57] === label attempt 1 ===
+[17:36:27] stage label OK in 30s
+[17:40:05] VERIFIED ckpt_lx5000v2_label_20260914T173627Z.tar.gz 374.4MB
+[17:42:24] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 374.4MB
+[17:43:10] VERIFIED ckpt_lx5000v2_label_20260914T173627Z.tar.gz 374.4MB
+[17:44:01] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 374.4MB
+[17:44:01] === select attempt 1 ===
+[17:44:20] stage select OK in 18s
+[17:47:23] VERIFIED ckpt_lx5000v2_select_20260914T174420Z.tar.gz 374.7MB
+[17:48:12] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 374.7MB
+[17:49:02] VERIFIED ckpt_lx5000v2_select_20260914T174420Z.tar.gz 374.7MB
+[17:50:07] VERIFIED ckpt_lx5000v2_LATEST.tar.gz 374.7MB
+[17:50:07] === finalize attempt 1 ===
+[17:50:41] stage finalize OK in 33s

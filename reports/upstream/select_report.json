@@ -1,0 +1,51 @@
+{
+  "eligible": 119155,
+  "selected": 5000,
+  "by_level": {
+    "A1": 1000,
+    "A2": 1000,
+    "B1": 1000,
+    "B2": 1000,
+    "C1": 1000
+  },
+  "direct_labeled_selected": 4563,
+  "model_labeled_selected": 437,
+  "pool_by_level": {
+    "A1": 2234,
+    "A2": 1912,
+    "B1": 3238,
+    "B2": 13808,
+    "C1": 97963
+  },
+  "fill_log": {
+    "A1": {
+      "selected": 1000,
+      "available": 2234
+    },
+    "A2": {
+      "selected": 1000,
+      "available": 1912
+    },
+    "B1": {
+      "selected": 1000,
+      "available": 3238
+    },
+    "B2": {
+      "selected": 1000,
+      "available": 13808
+    },
+    "C1": {
+      "selected": 1000,
+      "available": 97963
+    }
+  },
+  "weights": {
+    "freq": 0.34,
+    "disp": 0.18,
+    "ent": 0.1,
+    "rng": 0.08,
+    "df": 0.06,
+    "rec": 0.06,
+    "util": 0.18
+  }
+}

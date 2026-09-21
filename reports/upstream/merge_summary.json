@@ -1,0 +1,19 @@
+{
+  "elapsed_s": 804.6,
+  "candidate_lemmas": 215416,
+  "source_words": {
+    "fineweb": 7545397544,
+    "fwedu": 1509381045,
+    "wiki": 2172583977,
+    "subs": 1103261872,
+    "cc2026": 1301987532
+  },
+  "total_words": 13632611970,
+  "files_per_source": {
+    "fineweb": 115,
+    "fwedu": 18,
+    "wiki": 110,
+    "subs": 1,
+    "cc2026": 128
+  }
+}

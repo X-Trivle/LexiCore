@@ -1,0 +1,62 @@
+[14:34:11] wiki: downloading 41 shards ...
+[14:35:47] wiki: 82 new chunks (41 shards, psh=3); starting workers
+[14:38:34] wiki chunks 3: 37,179,876 words
+[14:39:04] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:39:06] wiki chunks 6: 79,407,225 words
+[14:39:09] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:39:46] wiki chunks 9: 133,748,374 words
+[14:39:58] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:40:02] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:40:37] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:40:42] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:41:10] wiki chunks 12: 190,057,096 words
+[14:42:07] wiki chunks 15: 230,301,758 words
+[14:42:31] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:42:36] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:43:13] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:43:17] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:44:30] wiki chunks 18: 274,449,693 words
+[14:45:30] wiki chunks 21: 373,139,760 words
+[14:46:26] wiki chunks 24: 513,865,046 words
+[14:46:43] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:46:48] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:47:39] wiki chunks 27: 627,752,522 words
+[14:48:34] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:48:36] wiki chunks 30: 696,629,055 words
+[14:49:07] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:49:20] wiki chunks 33: 814,248,567 words
+[14:49:55] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:50:09] wiki chunks 36: 989,038,761 words
+[14:50:29] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:50:51] wiki chunks 39: 1,082,157,029 words
+[14:51:26] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:51:43] wiki chunks 42: 1,145,273,304 words
+[14:51:54] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:52:36] wiki chunks 45: 1,284,558,155 words
+[14:52:54] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:53:16] wiki chunks 48: 1,349,053,174 words
+[14:53:18] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:53:35] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:53:49] wiki chunks 51: 1,467,989,379 words
+[14:53:58] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:54:10] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:54:10] wiki chunks 54: 1,563,347,312 words
+[14:54:28] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:54:29] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:54:29] wiki chunks 57: 1,659,490,459 words
+[14:54:45] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:54:45] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:54:46] wiki chunks 60: 1,780,547,164 words
+[14:54:56] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:54:56] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:54:57] wiki chunks 63: 1,903,456,118 words
+[14:55:06] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:55:07] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:55:07] wiki chunks 66: 2,077,802,448 words
+[14:55:17] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:55:17] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:55:17] wiki chunks 69: 2,172,583,977 words
+[14:55:27] live backup wiki -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:55:27] live backup wiki -> lexicore-20260914-cb17ed: VERIFIED
+[14:55:29] wiki COMPLETE: 2,172,583,977 words, 5,428,305 docs, 69 chunks
+[run 14:55:29] stage wiki done in 1279.4s

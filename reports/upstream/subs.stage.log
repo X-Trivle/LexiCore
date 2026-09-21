@@ -1,0 +1,426 @@
+[14:57:01] subs streaming https://object.pouta.csc.fi/OPUS-OpenSubtitles/v2024/mono/en.txt.gz
+[14:57:09] subs: 7,140,533 words, part 0, inflight 16
+[14:57:13] subs: 14,445,807 words, part 1, inflight 13
+[14:57:15] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:57:19] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:57:19] subs: 21,954,987 words, part 2, inflight 12
+[14:57:20] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:57:23] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:57:24] subs: 30,081,820 words, part 3, inflight 10
+[14:57:27] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:57:30] subs: 37,641,557 words, part 4, inflight 12
+[14:57:30] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:57:32] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:57:36] subs: 44,772,529 words, part 5, inflight 15
+[14:57:36] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:57:41] subs: 52,051,791 words, part 6, inflight 14
+[14:57:41] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:57:44] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:57:45] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:57:46] subs: 59,846,707 words, part 6, inflight 12
+[14:57:48] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:57:50] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:57:52] subs: 68,258,511 words, part 7, inflight 9
+[14:57:53] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:57:56] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:57:59] subs: 76,759,763 words, part 8, inflight 10
+[14:57:59] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:58:02] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:58:05] subs: 84,523,529 words, part 9, inflight 12
+[14:58:07] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:58:09] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:58:11] subs: 91,778,282 words, part 10, inflight 14
+[14:58:15] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:58:17] subs: 99,918,777 words, part 11, inflight 10
+[14:58:18] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:58:21] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:58:23] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:58:23] subs: 107,855,642 words, part 12, inflight 11
+[14:58:27] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:58:29] subs: 114,848,502 words, part 13, inflight 15
+[14:58:30] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:58:35] subs: 122,776,844 words, part 14, inflight 11
+[14:58:41] subs: 130,552,774 words, part 15, inflight 12
+[14:58:47] subs: 138,279,693 words, part 16, inflight 12
+[14:58:49] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:58:53] subs: 145,839,977 words, part 16, inflight 12
+[14:58:56] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:59:00] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:59:00] subs: 153,125,255 words, part 17, inflight 14
+[14:59:06] subs: 161,106,137 words, part 18, inflight 10
+[14:59:12] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[14:59:12] subs: 168,998,147 words, part 19, inflight 12
+[14:59:14] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[14:59:16] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[14:59:17] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[14:59:19] subs: 177,206,977 words, part 20, inflight 10
+[14:59:20] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:59:26] subs: 185,292,545 words, part 21, inflight 11
+[14:59:27] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:59:30] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[14:59:32] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:59:32] subs: 193,117,745 words, part 22, inflight 12
+[14:59:33] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[14:59:34] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[14:59:35] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:59:35] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[14:59:39] subs: 200,750,562 words, part 23, inflight 12
+[14:59:39] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[14:59:39] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:59:43] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:59:43] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[14:59:45] subs: 208,520,408 words, part 24, inflight 13
+[14:59:47] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:59:49] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[14:59:52] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[14:59:52] subs: 216,714,842 words, part 25, inflight 10
+[14:59:53] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[14:59:54] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[14:59:56] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[14:59:59] subs: 225,038,678 words, part 26, inflight 10
+[14:59:59] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:00:02] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:00:03] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:00:05] subs: 233,580,863 words, part 27, inflight 8
+[15:00:07] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:00:07] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:00:11] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:00:13] subs: 241,261,646 words, part 28, inflight 13
+[15:00:13] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:00:19] subs: 248,726,596 words, part 28, inflight 13
+[15:00:20] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:00:21] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:00:26] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:00:26] subs: 256,404,091 words, part 29, inflight 13
+[15:00:30] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:00:33] subs: 264,255,743 words, part 30, inflight 12
+[15:00:35] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:00:39] subs: 272,621,817 words, part 31, inflight 10
+[15:00:46] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:00:46] subs: 279,495,661 words, part 32, inflight 16
+[15:00:50] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:00:52] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:00:52] subs: 287,374,522 words, part 33, inflight 10
+[15:00:53] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:00:57] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:01:00] subs: 295,300,693 words, part 34, inflight 12
+[15:01:02] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:01:06] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:01:07] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:01:07] subs: 302,385,204 words, part 35, inflight 14
+[15:01:13] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:01:13] subs: 310,272,090 words, part 36, inflight 12
+[15:01:17] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:01:20] subs: 318,159,656 words, part 37, inflight 11
+[15:01:20] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:01:21] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:01:25] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:01:25] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:01:27] subs: 326,385,960 words, part 37, inflight 9
+[15:01:29] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:01:31] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:01:35] subs: 333,727,190 words, part 38, inflight 14
+[15:01:35] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:01:41] subs: 341,816,010 words, part 39, inflight 11
+[15:01:43] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:01:45] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:01:49] subs: 348,993,622 words, part 40, inflight 13
+[15:01:56] subs: 357,022,428 words, part 41, inflight 10
+[15:01:56] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:01:56] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:01:59] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:02:01] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:02:03] subs: 364,557,014 words, part 42, inflight 13
+[15:02:03] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:02:03] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:02:08] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:02:08] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:02:10] subs: 372,829,599 words, part 43, inflight 8
+[15:02:13] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:02:16] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:02:18] subs: 379,870,502 words, part 44, inflight 14
+[15:02:21] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:02:22] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:02:24] subs: 387,917,482 words, part 45, inflight 10
+[15:02:28] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:02:30] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:02:32] subs: 396,162,641 words, part 46, inflight 9
+[15:02:36] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:02:37] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:02:40] subs: 404,253,447 words, part 47, inflight 11
+[15:02:41] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:02:45] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:02:47] subs: 411,719,030 words, part 47, inflight 12
+[15:02:49] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:02:54] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:02:54] subs: 419,495,385 words, part 48, inflight 11
+[15:02:59] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:03:01] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:03:02] subs: 427,527,544 words, part 49, inflight 10
+[15:03:05] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:03:09] subs: 434,635,713 words, part 50, inflight 14
+[15:03:10] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:03:14] live backup subs -> lexicore-mirror-20260914-afecdd: VERIFIED
+[15:03:16] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:03:17] subs: 442,764,965 words, part 51, inflight 10
+[15:03:24] subs: 450,647,966 words, part 52, inflight 11
+[15:03:25] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:03:32] subs: 456,983,016 words, part 53, inflight 17
+[15:03:36] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:03:36] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:03:39] subs: 464,783,142 words, part 54, inflight 11
+[15:03:40] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:03:45] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:03:47] subs: 471,931,270 words, part 54, inflight 14
+[15:03:49] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:03:54] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:03:54] subs: 480,328,702 words, part 55, inflight 9
+[15:03:54] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:03:57] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:04:02] subs: 487,163,061 words, part 56, inflight 17
+[15:04:02] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:04:05] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:04:09] subs: 494,944,190 words, part 57, inflight 11
+[15:04:11] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:04:13] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:04:17] subs: 502,452,314 words, part 58, inflight 13
+[15:04:18] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:04:20] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:04:25] subs: 509,994,970 words, part 59, inflight 14
+[15:04:27] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:04:30] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:04:33] subs: 517,321,796 words, part 60, inflight 14
+[15:04:33] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:04:35] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:04:41] subs: 524,514,084 words, part 61, inflight 14
+[15:04:44] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:04:45] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:04:48] subs: 532,344,473 words, part 61, inflight 11
+[15:04:50] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:04:52] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:04:56] subs: 540,340,628 words, part 62, inflight 11
+[15:04:57] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:05:01] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:05:04] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:05:04] subs: 547,371,835 words, part 63, inflight 14
+[15:05:09] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:05:12] subs: 555,056,041 words, part 64, inflight 12
+[15:05:14] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:05:15] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:05:20] subs: 562,160,277 words, part 65, inflight 15
+[15:05:22] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:05:27] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:05:28] subs: 569,636,471 words, part 66, inflight 12
+[15:05:31] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:05:32] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:05:36] subs: 577,232,269 words, part 67, inflight 12
+[15:05:40] live backup subs -> lexicore-20260914-cb17ed: VERIFIED
+[15:05:45] subs: 585,050,895 words, part 68, inflight 11
+[15:05:46] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:05:48] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:05:53] subs: 593,207,252 words, part 69, inflight 10
+[15:05:56] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:05:59] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:06:02] subs: 600,805,516 words, part 69, inflight 11
+[15:06:07] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:06:10] subs: 609,145,350 words, part 70, inflight 9
+[15:06:15] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:06:17] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:06:20] subs: 616,629,357 words, part 71, inflight 13
+[15:06:24] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:06:26] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:06:28] subs: 623,796,719 words, part 72, inflight 12
+[15:06:33] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:06:35] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:06:36] subs: 631,685,762 words, part 73, inflight 10
+[15:06:42] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:06:45] subs: 639,304,439 words, part 74, inflight 12
+[15:06:51] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:06:52] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:06:54] subs: 646,185,307 words, part 75, inflight 14
+[15:06:55] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:07:00] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:07:01] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:07:02] subs: 654,060,845 words, part 76, inflight 9
+[15:07:11] subs: 661,529,511 words, part 76, inflight 12
+[15:07:11] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:07:11] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:07:18] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:07:18] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:07:20] subs: 669,260,122 words, part 77, inflight 13
+[15:07:28] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:07:29] subs: 677,126,367 words, part 78, inflight 9
+[15:07:30] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:07:35] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:07:36] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:07:38] subs: 683,697,426 words, part 79, inflight 15
+[15:07:45] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:07:46] subs: 692,001,945 words, part 80, inflight 9
+[15:07:49] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:07:55] subs: 699,376,918 words, part 81, inflight 11
+[15:07:56] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:07:58] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:08:04] subs: 706,182,901 words, part 82, inflight 15
+[15:08:13] subs: 713,437,102 words, part 83, inflight 13
+[15:08:14] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:08:14] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:08:20] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:08:21] subs: 721,311,635 words, part 83, inflight 10
+[15:08:28] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:08:31] subs: 728,310,654 words, part 84, inflight 14
+[15:08:34] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:08:40] subs: 735,744,564 words, part 85, inflight 12
+[15:08:44] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:08:45] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:08:49] subs: 743,602,466 words, part 86, inflight 12
+[15:08:58] subs: 751,065,061 words, part 87, inflight 12
+[15:09:06] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:09:06] subs: 758,021,541 words, part 88, inflight 12
+[15:09:15] subs: 765,877,715 words, part 89, inflight 11
+[15:09:25] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:09:25] subs: 774,352,093 words, part 90, inflight 10
+[15:09:27] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:09:28] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:09:34] subs: 782,121,475 words, part 91, inflight 11
+[15:09:40] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:09:43] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:09:43] subs: 788,788,853 words, part 91, inflight 13
+[15:09:44] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:09:46] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:09:49] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:09:49] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:09:50] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:09:53] subs: 797,236,581 words, part 92, inflight 8
+[15:09:58] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:10:03] subs: 805,119,826 words, part 93, inflight 13
+[15:10:11] subs: 812,266,805 words, part 94, inflight 11
+[15:10:16] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:10:19] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:10:20] subs: 819,592,657 words, part 95, inflight 10
+[15:10:25] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:10:30] subs: 826,508,391 words, part 96, inflight 14
+[15:10:38] subs: 834,523,641 words, part 97, inflight 11
+[15:10:47] subs: 842,391,069 words, part 98, inflight 11
+[15:10:52] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:10:56] subs: 848,922,655 words, part 98, inflight 13
+[15:10:58] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:10:59] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:11:02] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:11:03] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:11:04] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:11:05] subs: 855,900,498 words, part 99, inflight 12
+[15:11:08] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:11:12] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:11:13] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:11:14] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:11:14] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:11:15] subs: 863,771,021 words, part 100, inflight 9
+[15:11:16] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:11:23] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:11:24] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:11:25] subs: 871,270,711 words, part 101, inflight 13
+[15:11:26] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:11:28] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:11:31] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:11:31] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:11:33] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:11:34] subs: 878,489,972 words, part 102, inflight 13
+[15:11:34] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:11:35] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:11:36] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:11:37] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:11:43] subs: 885,050,546 words, part 102, inflight 14
+[15:11:43] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:11:45] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:11:50] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:11:51] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:11:51] subs: 893,708,335 words, part 103, inflight 5
+[15:11:57] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:11:59] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:12:03] subs: 902,027,155 words, part 104, inflight 9
+[15:12:03] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:12:05] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:12:13] subs: 909,725,475 words, part 105, inflight 12
+[15:12:16] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:12:17] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:12:17] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:12:18] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:12:21] subs: 917,844,767 words, part 106, inflight 8
+[15:12:32] subs: 925,034,521 words, part 107, inflight 10
+[15:12:36] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:12:36] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:12:37] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:12:38] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:12:38] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:12:41] subs: 931,517,346 words, part 108, inflight 14
+[15:12:51] subs: 939,588,030 words, part 109, inflight 9
+[15:12:55] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:12:56] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:12:58] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:13:02] subs: 945,774,834 words, part 110, inflight 19
+[15:13:09] subs: 953,603,547 words, part 110, inflight 10
+[15:13:12] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:13:19] subs: 960,440,839 words, part 111, inflight 13
+[15:13:20] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:13:20] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:13:21] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:13:23] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:13:28] subs: 968,030,622 words, part 112, inflight 9
+[15:13:29] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:13:32] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:13:39] subs: 975,201,560 words, part 113, inflight 12
+[15:13:40] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:13:43] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:13:48] subs: 982,227,590 words, part 114, inflight 12
+[15:13:49] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:13:51] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:13:57] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:13:58] subs: 990,141,987 words, part 115, inflight 11
+[15:14:04] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:14:08] subs: 998,465,899 words, part 116, inflight 9
+[15:14:10] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:14:13] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:14:18] subs: 1,005,135,220 words, part 116, inflight 15
+[15:14:19] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:14:24] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:14:27] subs: 1,012,301,192 words, part 117, inflight 11
+[15:14:30] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:14:32] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:14:37] subs: 1,019,665,329 words, part 118, inflight 11
+[15:14:39] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:14:46] subs: 1,027,443,798 words, part 119, inflight 9
+[15:14:50] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:14:51] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:14:53] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:14:57] subs: 1,034,109,494 words, part 120, inflight 13
+[15:15:02] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:15:07] subs: 1,041,886,485 words, part 121, inflight 11
+[15:15:17] subs: 1,050,517,139 words, part 122, inflight 8
+[15:15:18] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:15:20] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:15:22] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:15:22] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:15:28] subs: 1,057,724,165 words, part 123, inflight 12
+[15:15:29] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:15:30] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:15:38] subs: 1,065,159,901 words, part 123, inflight 10
+[15:15:39] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:15:40] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:15:48] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:15:48] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:15:48] subs: 1,072,098,046 words, part 124, inflight 13
+[15:15:50] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:15:58] subs: 1,079,283,938 words, part 125, inflight 11
+[15:16:00] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:16:07] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:16:09] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:16:09] subs: 1,086,022,068 words, part 126, inflight 16
+[15:16:10] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:16:18] subs: 1,093,158,153 words, part 127, inflight 15
+[15:16:19] live backup subs -> lexicore-20260914-cb17ed: FAILED
+[15:16:27] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:16:28] subs: 1,101,320,950 words, part 127, inflight 9
+[15:16:31] subs: 1,103,261,872 words, part 127, inflight 0
+[15:16:34] live backup subs -> lexicore-mirror-20260914-afecdd: FAILED
+[15:16:35] subs COMPLETE: 1,103,261,872 words, 198,800,294 lines
+[run 15:16:35] stage subs done in 1174.6s

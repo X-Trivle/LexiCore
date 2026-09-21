@@ -1,0 +1,3413 @@
+{
+  "name": "LexiCore",
+  "version": "1.0.0",
+  "generated_utc": "2026-09-14T17:50:40.615611Z",
+  "method": "8B+ word multi-corpus frequency/dispersion/recency pipeline; CEFR via open profiles + calibrated model",
+  "environment": {
+    "captured_utc": "2026-09-14T13:00:03Z",
+    "nproc_measured": 24,
+    "os": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "python": "3.13.15",
+    "mem_gb": 50.52,
+    "disk_free_gb": 221.0,
+    "tpu": {
+      "pytorch": "2.9.0+cpu",
+      "tpu_cores_available": 0
+    },
+    "packages": {
+      "numpy": "2.1.3",
+      "pyarrow": "25.0.1",
+      "scikit-learn": "1.6.1"
+    },
+    "XRT_TPU_CONFIG": "localservice;0;localhost:51011"
+  },
+  "sources": {
+    "fineweb": {
+      "domain": "web (mixed, 2013-2024 CommonCrawl)",
+      "license": "ODC-By 1.0",
+      "words": 7545397544,
+      "docs": 14853888,
+      "files": [
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/000_00000.parquet",
+          "bytes": 2147292183,
+          "sha256": "6b552ea48424648dc86d00df276f93fdfc55e9ad342ce3e4affc23a3a370792b",
+          "source_file": "fineweb_000.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/001_00000.parquet",
+          "bytes": 2146714409,
+          "sha256": "6e08e6b25ed415c734c2b7e071afd6e62536f418afba0028c77c225218229c08",
+          "source_file": "fineweb_001.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/002_00000.parquet",
+          "bytes": 2148105492,
+          "sha256": "37f389ea51e8db23cab8943c1634bfaa9936f09beff25e06dfe173e5b49566ac",
+          "source_file": "fineweb_002.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/003_00000.parquet",
+          "bytes": 2147060562,
+          "sha256": "fa0fba42d6608dd650f8637cf27ea1362ce80ca8d2506fe1370e6c658455635f",
+          "source_file": "fineweb_003.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/004_00000.parquet",
+          "bytes": 2146566804,
+          "sha256": "c862bb4620c4a8037872b753e4520abdf2ec01a627bd9cab375f946cf7d21208",
+          "source_file": "fineweb_004.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/005_00000.parquet",
+          "bytes": 2146969492,
+          "sha256": "7e504858556b556547c79f7e4ed4b1a635a8ff0c7acaba4fc96293043be192fe",
+          "source_file": "fineweb_005.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/006_00000.parquet",
+          "bytes": 2147298995,
+          "sha256": "956467cb8120d5c4b0ddfb5e1fe2078f1f8bb21018c1e65caecf1c2d381743fd",
+          "source_file": "fineweb_006.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/007_00000.parquet",
+          "bytes": 2148002325,
+          "sha256": "0c6e3febbf7d56e51dac7594e6c94e7f786a59d4a0f33d5ab5e98aaa49ef32d0",
+          "source_file": "fineweb_007.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/008_00000.parquet",
+          "bytes": 2147398331,
+          "sha256": "84d7a5c4849034c3f454f5ae387639b1e4083c5554b65148bfc725d37dd64228",
+          "source_file": "fineweb_008.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/009_00000.parquet",
+          "bytes": 2148338231,
+          "sha256": "fbf1c8ceed24c754dc7be82df4c8a238b54a2865b0542af856662bb6c9f68cd8",
+          "source_file": "fineweb_009.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/010_00000.parquet",
+          "bytes": 2147655539,
+          "sha256": "69565902f5ac299767d62efb4320377870451072641af58fc320657d9afa5b5c",
+          "source_file": "fineweb_010.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/011_00000.parquet",
+          "bytes": 2147091724,
+          "sha256": "221ab32081d0a1b712e31b099912a3ea41bf3af568ddb6ce808adc3938a32ab3",
+          "source_file": "fineweb_011.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/012_00000.parquet",
+          "bytes": 2147653017,
+          "sha256": "34caf1a6bf36a635f58a5bab69c8e34c383dba15aab19d92de852188ba395716",
+          "source_file": "fineweb_012.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/013_00000.parquet",
+          "bytes": 2148275619,
+          "sha256": "48aa6144f665f98139a14cbc1cc28b976c895efc4e4c1df381cff362dbe96993",
+          "source_file": "fineweb_013.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/resolve/main/sample/10BT/014_00000.parquet",
+          "bytes": 574962194,
+          "sha256": "7168f92a680b3e28155a6b654ebf235b19bf4d2ab35f91dbab3fb47cbd629a8e",
+          "source_file": "fineweb_014.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s001-c006",
+          "words": 40827239,
+          "docs_en": 80887,
+          "source_file": "fineweb_001.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s002-c006",
+          "words": 40881078,
+          "docs_en": 80888,
+          "source_file": "fineweb_002.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s000-c006",
+          "words": 41806209,
+          "docs_en": 82886,
+          "source_file": "fineweb_000.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s000-c002",
+          "words": 80869780,
+          "docs_en": 160769,
+          "source_file": "fineweb_000.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s000-c001",
+          "words": 80862106,
+          "docs_en": 160781,
+          "source_file": "fineweb_000.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s000-c004",
+          "words": 81182543,
+          "docs_en": 160764,
+          "source_file": "fineweb_000.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s000-c005",
+          "words": 80812052,
+          "docs_en": 160784,
+          "source_file": "fineweb_000.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s001-c000",
+          "words": 80436877,
+          "docs_en": 160774,
+          "source_file": "fineweb_001.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s001-c001",
+          "words": 80476925,
+          "docs_en": 160780,
+          "source_file": "fineweb_001.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s001-c002",
+          "words": 81323775,
+          "docs_en": 160781,
+          "source_file": "fineweb_001.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s002-c001",
+          "words": 81499814,
+          "docs_en": 160787,
+          "source_file": "fineweb_002.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s003-c001",
+          "words": 80939218,
+          "docs_en": 160791,
+          "source_file": "fineweb_003.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s001-c003",
+          "words": 81170004,
+          "docs_en": 160781,
+          "source_file": "fineweb_001.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s003-c006",
+          "words": 40738238,
+          "docs_en": 80886,
+          "source_file": "fineweb_003.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s003-c002",
+          "words": 81205231,
+          "docs_en": 160773,
+          "source_file": "fineweb_003.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s003-c005",
+          "words": 82233457,
+          "docs_en": 160764,
+          "source_file": "fineweb_003.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s002-c004",
+          "words": 80972590,
+          "docs_en": 160771,
+          "source_file": "fineweb_002.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s000-c003",
+          "words": 80881439,
+          "docs_en": 160774,
+          "source_file": "fineweb_000.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s000-c000",
+          "words": 81549435,
+          "docs_en": 160767,
+          "source_file": "fineweb_000.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s002-c000",
+          "words": 80689060,
+          "docs_en": 160776,
+          "source_file": "fineweb_002.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s002-c003",
+          "words": 81128253,
+          "docs_en": 160797,
+          "source_file": "fineweb_002.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s004-c006",
+          "words": 37951980,
+          "docs_en": 74892,
+          "source_file": "fineweb_004.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s002-c005",
+          "words": 80774921,
+          "docs_en": 160775,
+          "source_file": "fineweb_002.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s003-c000",
+          "words": 80630898,
+          "docs_en": 160790,
+          "source_file": "fineweb_003.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s003-c004",
+          "words": 81091705,
+          "docs_en": 160775,
+          "source_file": "fineweb_003.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s001-c004",
+          "words": 81675326,
+          "docs_en": 160781,
+          "source_file": "fineweb_001.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s002-c002",
+          "words": 81978972,
+          "docs_en": 160781,
+          "source_file": "fineweb_002.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s003-c003",
+          "words": 80783556,
+          "docs_en": 160772,
+          "source_file": "fineweb_003.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s001-c005",
+          "words": 81265758,
+          "docs_en": 160777,
+          "source_file": "fineweb_001.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s004-c001",
+          "words": 81707533,
+          "docs_en": 160769,
+          "source_file": "fineweb_004.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s005-c001",
+          "words": 80497640,
+          "docs_en": 160777,
+          "source_file": "fineweb_005.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s004-c002",
+          "words": 81998860,
+          "docs_en": 160790,
+          "source_file": "fineweb_004.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s005-c000",
+          "words": 81083625,
+          "docs_en": 160773,
+          "source_file": "fineweb_005.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s004-c005",
+          "words": 81248142,
+          "docs_en": 160785,
+          "source_file": "fineweb_004.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s004-c003",
+          "words": 82051662,
+          "docs_en": 160789,
+          "source_file": "fineweb_004.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s004-c004",
+          "words": 81374785,
+          "docs_en": 160777,
+          "source_file": "fineweb_004.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s005-c003",
+          "words": 81093857,
+          "docs_en": 160796,
+          "source_file": "fineweb_005.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s004-c000",
+          "words": 81539329,
+          "docs_en": 160766,
+          "source_file": "fineweb_004.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s005-c004",
+          "words": 82041478,
+          "docs_en": 160791,
+          "source_file": "fineweb_005.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s006-c001",
+          "words": 82134476,
+          "docs_en": 160792,
+          "source_file": "fineweb_006.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s006-c000",
+          "words": 81293935,
+          "docs_en": 160788,
+          "source_file": "fineweb_006.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s006-c003",
+          "words": 82034442,
+          "docs_en": 160788,
+          "source_file": "fineweb_006.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s006-c004",
+          "words": 81122902,
+          "docs_en": 160779,
+          "source_file": "fineweb_006.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s005-c006",
+          "words": 41298881,
+          "docs_en": 80895,
+          "source_file": "fineweb_005.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s006-c005",
+          "words": 81158121,
+          "docs_en": 160771,
+          "source_file": "fineweb_006.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s007-c004",
+          "words": 81457954,
+          "docs_en": 160790,
+          "source_file": "fineweb_007.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s007-c005",
+          "words": 81326378,
+          "docs_en": 160776,
+          "source_file": "fineweb_007.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s007-c000",
+          "words": 81565717,
+          "docs_en": 160782,
+          "source_file": "fineweb_007.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s007-c003",
+          "words": 81782481,
+          "docs_en": 160788,
+          "source_file": "fineweb_007.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s006-c002",
+          "words": 81098685,
+          "docs_en": 160792,
+          "source_file": "fineweb_006.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s007-c006",
+          "words": 39352993,
+          "docs_en": 77894,
+          "source_file": "fineweb_007.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s008-c006",
+          "words": 35957154,
+          "docs_en": 68900,
+          "source_file": "fineweb_008.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s005-c005",
+          "words": 81495548,
+          "docs_en": 160790,
+          "source_file": "fineweb_005.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s005-c002",
+          "words": 80443479,
+          "docs_en": 160782,
+          "source_file": "fineweb_005.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s008-c001",
+          "words": 81576236,
+          "docs_en": 160774,
+          "source_file": "fineweb_008.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s008-c000",
+          "words": 82463086,
+          "docs_en": 160794,
+          "source_file": "fineweb_008.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s007-c002",
+          "words": 82087993,
+          "docs_en": 160786,
+          "source_file": "fineweb_007.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s006-c006",
+          "words": 39713005,
+          "docs_en": 77902,
+          "source_file": "fineweb_006.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s007-c001",
+          "words": 81126222,
+          "docs_en": 160780,
+          "source_file": "fineweb_007.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s008-c002",
+          "words": 82635423,
+          "docs_en": 160786,
+          "source_file": "fineweb_008.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s008-c003",
+          "words": 82907281,
+          "docs_en": 160774,
+          "source_file": "fineweb_008.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s009-c006",
+          "words": 37418637,
+          "docs_en": 72911,
+          "source_file": "fineweb_009.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s008-c004",
+          "words": 82534892,
+          "docs_en": 160784,
+          "source_file": "fineweb_008.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s009-c003",
+          "words": 82226846,
+          "docs_en": 160788,
+          "source_file": "fineweb_009.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s009-c000",
+          "words": 82199649,
+          "docs_en": 160774,
+          "source_file": "fineweb_009.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s008-c005",
+          "words": 81919181,
+          "docs_en": 160786,
+          "source_file": "fineweb_008.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s009-c001",
+          "words": 82232261,
+          "docs_en": 160773,
+          "source_file": "fineweb_009.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s009-c002",
+          "words": 81706247,
+          "docs_en": 160778,
+          "source_file": "fineweb_009.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s010-c006",
+          "words": 35706383,
+          "docs_en": 69909,
+          "source_file": "fineweb_010.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s011-c006",
+          "words": 34459474,
+          "docs_en": 67913,
+          "source_file": "fineweb_011.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s010-c001",
+          "words": 82278455,
+          "docs_en": 160793,
+          "source_file": "fineweb_010.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s009-c004",
+          "words": 81811148,
+          "docs_en": 160783,
+          "source_file": "fineweb_009.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s010-c000",
+          "words": 82805951,
+          "docs_en": 160786,
+          "source_file": "fineweb_010.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s009-c005",
+          "words": 82892931,
+          "docs_en": 160787,
+          "source_file": "fineweb_009.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s010-c002",
+          "words": 82796245,
+          "docs_en": 160787,
+          "source_file": "fineweb_010.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s012-c006",
+          "words": 35482670,
+          "docs_en": 68909,
+          "source_file": "fineweb_012.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s010-c005",
+          "words": 82064659,
+          "docs_en": 160796,
+          "source_file": "fineweb_010.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s011-c000",
+          "words": 82492224,
+          "docs_en": 160812,
+          "source_file": "fineweb_011.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s011-c002",
+          "words": 82199971,
+          "docs_en": 160796,
+          "source_file": "fineweb_011.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s011-c001",
+          "words": 82828122,
+          "docs_en": 160794,
+          "source_file": "fineweb_011.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s011-c003",
+          "words": 82506735,
+          "docs_en": 160810,
+          "source_file": "fineweb_011.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s011-c005",
+          "words": 82562009,
+          "docs_en": 160797,
+          "source_file": "fineweb_011.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s012-c000",
+          "words": 82033904,
+          "docs_en": 160793,
+          "source_file": "fineweb_012.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s011-c004",
+          "words": 83246880,
+          "docs_en": 160789,
+          "source_file": "fineweb_011.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s012-c001",
+          "words": 82425192,
+          "docs_en": 160788,
+          "source_file": "fineweb_012.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s010-c004",
+          "words": 82396492,
+          "docs_en": 160794,
+          "source_file": "fineweb_010.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s010-c003",
+          "words": 82122874,
+          "docs_en": 160792,
+          "source_file": "fineweb_010.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s012-c002",
+          "words": 82364889,
+          "docs_en": 160798,
+          "source_file": "fineweb_012.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s012-c003",
+          "words": 82741486,
+          "docs_en": 160797,
+          "source_file": "fineweb_012.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s013-c000",
+          "words": 82468150,
+          "docs_en": 160794,
+          "source_file": "fineweb_013.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s012-c005",
+          "words": 83229864,
+          "docs_en": 160785,
+          "source_file": "fineweb_012.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s013-c002",
+          "words": 81444752,
+          "docs_en": 160803,
+          "source_file": "fineweb_013.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s013-c006",
+          "words": 40558632,
+          "docs_en": 80892,
+          "source_file": "fineweb_013.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s014-c001",
+          "words": 60621327,
+          "docs_en": 120574,
+          "source_file": "fineweb_014.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s013-c004",
+          "words": 80737985,
+          "docs_en": 160804,
+          "source_file": "fineweb_013.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s013-c005",
+          "words": 81008288,
+          "docs_en": 160799,
+          "source_file": "fineweb_013.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s013-c001",
+          "words": 81201572,
+          "docs_en": 160794,
+          "source_file": "fineweb_013.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s013-c003",
+          "words": 81686892,
+          "docs_en": 160797,
+          "source_file": "fineweb_013.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s014-c000",
+          "words": 80779518,
+          "docs_en": 160806,
+          "source_file": "fineweb_014.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fineweb-s012-c004",
+          "words": 81896415,
+          "docs_en": 160803,
+          "source_file": "fineweb_012.parquet"
+        }
+      ]
+    },
+    "fwedu": {
+      "domain": "educational web (through 2024)",
+      "license": "ODC-By 1.0",
+      "words": 1509381045,
+      "docs": 2020431,
+      "files": [
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu-score-2/resolve/main/data/CC-MAIN-2025-26/000_00000.parquet",
+          "bytes": 2152840565,
+          "sha256": "f6d7d29e528e94ee2e0c22452cf16ad53a5b31c3ac0b9052d47603228f6f3814",
+          "source_file": "fwedu_000.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu-score-2/resolve/main/data/CC-MAIN-2025-26/000_00038.parquet",
+          "bytes": 2150768131,
+          "sha256": "810de17dbbf8354c99f046feb0ec9bc67bd7a14754373f8cdbd6012206768652",
+          "source_file": "fwedu_001.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu-score-2/resolve/main/data/CC-MAIN-2025-26/001_00025.parquet",
+          "bytes": 565368856,
+          "sha256": "521bf88b1b46ff7c0a2c97fff3c7089ecb39554a8a40bff35d92c26eb823b1e8",
+          "source_file": "fwedu_002.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu-score-2/resolve/main/data/CC-MAIN-2025-26/002_00013.parquet",
+          "bytes": 965903981,
+          "sha256": "4d7722fcabd24e13c921e16a8046ed859d8f68c32c65423bc017b12e0ebdb523",
+          "source_file": "fwedu_003.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fwedu-s002-c001",
+          "words": 13708378,
+          "docs_en": 16431,
+          "source_file": "fwedu_002.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fwedu-s001-c004",
+          "words": 96598467,
+          "docs_en": 126872,
+          "source_file": "fwedu_001.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fwedu-s000-c004",
+          "words": 96462584,
+          "docs_en": 134864,
+          "source_file": "fwedu_000.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fwedu-s000-c003",
+          "words": 115111458,
+          "docs_en": 159839,
+          "source_file": "fwedu_000.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fwedu-s003-c001",
+          "words": 120117454,
+          "docs_en": 143874,
+          "source_file": "fwedu_003.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fwedu-s000-c000",
+          "words": 113605293,
+          "docs_en": 159839,
+          "source_file": "fwedu_000.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fwedu-s000-c001",
+          "words": 114619503,
+          "docs_en": 159839,
+          "source_file": "fwedu_000.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fwedu-s001-c001",
+          "words": 114843618,
+          "docs_en": 159839,
+          "source_file": "fwedu_001.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fwedu-s001-c000",
+          "words": 114440921,
+          "docs_en": 159839,
+          "source_file": "fwedu_001.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fwedu-s000-c002",
+          "words": 115092670,
+          "docs_en": 159839,
+          "source_file": "fwedu_000.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fwedu-s001-c003",
+          "words": 115167651,
+          "docs_en": 159839,
+          "source_file": "fwedu_001.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fwedu-s001-c002",
+          "words": 113973774,
+          "docs_en": 159839,
+          "source_file": "fwedu_001.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fwedu-s002-c000",
+          "words": 133840553,
+          "docs_en": 159839,
+          "source_file": "fwedu_002.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "fwedu-s003-c000",
+          "words": 131798721,
+          "docs_en": 159839,
+          "source_file": "fwedu_003.parquet"
+        }
+      ]
+    },
+    "wiki": {
+      "domain": "encyclopedic (Wikipedia)",
+      "license": "CC BY-SA 3.0 / GFDL",
+      "words": 2172583977,
+      "docs": 5428305,
+      "files": [
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00000-of-00041.parquet",
+          "bytes": 420296449,
+          "sha256": "382e7f6f09e488b24793a7f7cfc659879d5a22da2cf2efec6491665f0c019677",
+          "source_file": "wiki_000.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00001-of-00041.parquet",
+          "bytes": 351448367,
+          "sha256": "6cd57a5825312ca966313d4a1b614690b5c4fb53cee9b124bc0e999977eb36cf",
+          "source_file": "wiki_001.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00002-of-00041.parquet",
+          "bytes": 329024669,
+          "sha256": "b18674f163d4f106e43396fd58412a79b80a418c72bb728c20af439e7ca4d5b7",
+          "source_file": "wiki_002.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00003-of-00041.parquet",
+          "bytes": 330779424,
+          "sha256": "0b8a6f452f5ef59d0986a067f70110feb16d7c1d281ba2db0b3df32933618fcc",
+          "source_file": "wiki_003.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00004-of-00041.parquet",
+          "bytes": 306945391,
+          "sha256": "1424300f113c13ee022b7929185fa4f7e20c6195ba563d728e8a3dc47c8e9aba",
+          "source_file": "wiki_004.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00005-of-00041.parquet",
+          "bytes": 243974056,
+          "sha256": "220d31bb222ba2d449c845733622a6a2b7a89db3e28b24bfcb3a9bb3e52c6c8d",
+          "source_file": "wiki_005.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00006-of-00041.parquet",
+          "bytes": 266288728,
+          "sha256": "b8becbe9989a2c63f129a707a4674a84fb093c163673b1f4ce97afbf5306f04c",
+          "source_file": "wiki_006.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00007-of-00041.parquet",
+          "bytes": 228195804,
+          "sha256": "adebba8b075444923ba42ed6214fe205efc756c773f440d98cbdd88a33597c2c",
+          "source_file": "wiki_007.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00008-of-00041.parquet",
+          "bytes": 247687191,
+          "sha256": "905f959921ab8de07e7ce238d7c9ef33bd597585a17a99c3ba00163b25002bef",
+          "source_file": "wiki_008.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00009-of-00041.parquet",
+          "bytes": 227378231,
+          "sha256": "465bd99719b0f2d1974402b7922a7a66399675dc6218a0a40057e0512592c07b",
+          "source_file": "wiki_009.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00010-of-00041.parquet",
+          "bytes": 233604795,
+          "sha256": "cd8b4e9ee2506ba5f47d552c56e2a7569402a6814d9fa171c0e995e56859e51b",
+          "source_file": "wiki_010.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00011-of-00041.parquet",
+          "bytes": 231748583,
+          "sha256": "881e8efe6dbaddd34791fdc2158123ed344c436263b9052a0d659418fff89c3a",
+          "source_file": "wiki_011.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00012-of-00041.parquet",
+          "bytes": 239222511,
+          "sha256": "d33835c5e69d5f2464cab1ad70b998ec37e084ea0c0ef9f837fac4a9bb030860",
+          "source_file": "wiki_012.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00013-of-00041.parquet",
+          "bytes": 241146961,
+          "sha256": "9abcab8c808952dc6a4822da1591db51de980a792ed37acd3bd243ebd99d200e",
+          "source_file": "wiki_013.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00014-of-00041.parquet",
+          "bytes": 222798405,
+          "sha256": "7419912e150b17ce395ea039620c21a7e1cb54731c7c2fd2ccbbed56674eeccd",
+          "source_file": "wiki_014.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00015-of-00041.parquet",
+          "bytes": 234578705,
+          "sha256": "1d11ff44d5579dbb9e1976330cdf70ec8b04a7a5dfe4113916b71551fb3cf715",
+          "source_file": "wiki_015.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00016-of-00041.parquet",
+          "bytes": 503153575,
+          "sha256": "e559da89b795e365bc1d1bb87576d1a5478c346cf37eb06159caf9579fe1e54e",
+          "source_file": "wiki_016.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00017-of-00041.parquet",
+          "bytes": 230813705,
+          "sha256": "216cd1e4921cc884ebdaed94b61d3e15560f502f73752f3694ed05e6347a6562",
+          "source_file": "wiki_017.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00018-of-00041.parquet",
+          "bytes": 231055386,
+          "sha256": "64fb53939ab6aae24299cdafa2ce88e115d91930be35609b2dcfc1fc3b9f85eb",
+          "source_file": "wiki_018.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00019-of-00041.parquet",
+          "bytes": 195276969,
+          "sha256": "99c23125b0dd115d68f4a921376880e307bdfcbf3bfd66ae4ed90e853e1dadac",
+          "source_file": "wiki_019.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00020-of-00041.parquet",
+          "bytes": 225141733,
+          "sha256": "79ee06627f4ba2fec056fcd23c077a29238bbcbacc3187e8d1a0b47e663e9c7a",
+          "source_file": "wiki_020.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00021-of-00041.parquet",
+          "bytes": 216445587,
+          "sha256": "e9f695672d916793439d8f48893ecde94c61b0eb038a0034c4e1f1f194205979",
+          "source_file": "wiki_021.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00022-of-00041.parquet",
+          "bytes": 201995404,
+          "sha256": "50ba80435bf2fd0b818533a1ca3118454a3ae275dc2250e0b68dc852dd03f3d2",
+          "source_file": "wiki_022.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00023-of-00041.parquet",
+          "bytes": 212615391,
+          "sha256": "b722b7e4039c65382286b6aa5a35f9a4c5d3536b758c346a94af7a2a692cc6bb",
+          "source_file": "wiki_023.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00024-of-00041.parquet",
+          "bytes": 220729597,
+          "sha256": "eb9818bff41110829f39f8100aee5936cf6088c72a5925c2b08bcd3c37ac0170",
+          "source_file": "wiki_024.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00025-of-00041.parquet",
+          "bytes": 221292721,
+          "sha256": "fed7d34add9b161745dd2677ff3c5f782a471f433bae80c59933e9b68225be93",
+          "source_file": "wiki_025.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00026-of-00041.parquet",
+          "bytes": 208188233,
+          "sha256": "ffffb7d303ef78b47c4c835211b35f6052ffa2d5998e3f65d69bb7fe512ee69c",
+          "source_file": "wiki_026.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00027-of-00041.parquet",
+          "bytes": 213980716,
+          "sha256": "1f0c7bcaf2aeb9765a981c8911b95ab3a9e50456bbad64e50e722a53b8608ccc",
+          "source_file": "wiki_027.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00028-of-00041.parquet",
+          "bytes": 188376392,
+          "sha256": "10589a39188af404fa458da252df7dcf22c6f6395a1501d9243ef56ce4c3c148",
+          "source_file": "wiki_028.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00029-of-00041.parquet",
+          "bytes": 217775627,
+          "sha256": "8f24c4250d69dbee36962d587cac632098635fa78e8705db140cce68928bb9d3",
+          "source_file": "wiki_029.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00030-of-00041.parquet",
+          "bytes": 203945186,
+          "sha256": "1de329963a4aaed0c40d820a564487dc98ef113c8ca6b88b11d495d6a4b98774",
+          "source_file": "wiki_030.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00031-of-00041.parquet",
+          "bytes": 215470925,
+          "sha256": "55e58e33710b9326e1ce3aab1319377afd9ce18df089b08aba2ab9286228666e",
+          "source_file": "wiki_031.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00032-of-00041.parquet",
+          "bytes": 214242576,
+          "sha256": "354c4d35fa089351ed4ec1622fd8930f309dddd3dccbf411e4dd8a52eff638d4",
+          "source_file": "wiki_032.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00033-of-00041.parquet",
+          "bytes": 202706223,
+          "sha256": "a5140a1c80805d599b791fbd668d0f49972eecf0cd2d863cede53013f52e0900",
+          "source_file": "wiki_033.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00034-of-00041.parquet",
+          "bytes": 219010799,
+          "sha256": "298528554e93a3fae9f694087a7376b70be223084b2739ef9488418202a948ab",
+          "source_file": "wiki_034.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00035-of-00041.parquet",
+          "bytes": 224459876,
+          "sha256": "460ab2f5a2da091e310d0f86c461a73f22b189f22ac7115e4708a5da9baf4d1c",
+          "source_file": "wiki_035.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00036-of-00041.parquet",
+          "bytes": 610276598,
+          "sha256": "7385c9f0482cd592578c1c22c5eaaad8bc3013bec4e3bfe394b441dc728f78a9",
+          "source_file": "wiki_036.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00037-of-00041.parquet",
+          "bytes": 674143674,
+          "sha256": "f2f7718efc3165ed599ec0d99fef07b98ec4dd0da902ffc330dd5c75016240cb",
+          "source_file": "wiki_037.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00038-of-00041.parquet",
+          "bytes": 538231796,
+          "sha256": "16ff05ab829cb9c983db14b7f77a677d279f8120571e67b2793735851b71ae89",
+          "source_file": "wiki_038.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00039-of-00041.parquet",
+          "bytes": 464851854,
+          "sha256": "63a0be9b1b458b834428c897e37a6e2643e0c33dd4ac08a994f3b3dbeee124e1",
+          "source_file": "wiki_039.parquet"
+        },
+        {
+          "kind": "source_file",
+          "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.en/train-00040-of-00041.parquet",
+          "bytes": 421630218,
+          "sha256": "fed6addb1da9364fcf42c6953539eecc21bbc2cf3cd33743684e6872ce6c468a",
+          "source_file": "wiki_040.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s010-c001",
+          "words": 11577919,
+          "docs_en": 36251,
+          "source_file": "wiki_010.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s005-c001",
+          "words": 12811142,
+          "docs_en": 36252,
+          "source_file": "wiki_005.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s009-c001",
+          "words": 12790815,
+          "docs_en": 36251,
+          "source_file": "wiki_009.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s008-c001",
+          "words": 13223927,
+          "docs_en": 36251,
+          "source_file": "wiki_008.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s006-c001",
+          "words": 13305772,
+          "docs_en": 36251,
+          "source_file": "wiki_006.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s007-c001",
+          "words": 15697650,
+          "docs_en": 36251,
+          "source_file": "wiki_007.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s004-c001",
+          "words": 17238831,
+          "docs_en": 36252,
+          "source_file": "wiki_004.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s003-c001",
+          "words": 17926421,
+          "docs_en": 36252,
+          "source_file": "wiki_003.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s002-c001",
+          "words": 19175897,
+          "docs_en": 36252,
+          "source_file": "wiki_002.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s001-c001",
+          "words": 19635026,
+          "docs_en": 36252,
+          "source_file": "wiki_001.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s000-c001",
+          "words": 22962336,
+          "docs_en": 36252,
+          "source_file": "wiki_000.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s011-c001",
+          "words": 13711360,
+          "docs_en": 36251,
+          "source_file": "wiki_011.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s013-c001",
+          "words": 13380480,
+          "docs_en": 36251,
+          "source_file": "wiki_013.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s012-c001",
+          "words": 15083527,
+          "docs_en": 36251,
+          "source_file": "wiki_012.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s014-c001",
+          "words": 11780655,
+          "docs_en": 36251,
+          "source_file": "wiki_014.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s015-c001",
+          "words": 15789188,
+          "docs_en": 36251,
+          "source_file": "wiki_015.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s016-c001",
+          "words": 14954495,
+          "docs_en": 36251,
+          "source_file": "wiki_016.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s017-c001",
+          "words": 13404252,
+          "docs_en": 36251,
+          "source_file": "wiki_017.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s007-c000",
+          "words": 41706613,
+          "docs_en": 119879,
+          "source_file": "wiki_007.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s018-c001",
+          "words": 12873902,
+          "docs_en": 36251,
+          "source_file": "wiki_018.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s011-c000",
+          "words": 44109552,
+          "docs_en": 119879,
+          "source_file": "wiki_011.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s009-c000",
+          "words": 44527521,
+          "docs_en": 119879,
+          "source_file": "wiki_009.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s010-c000",
+          "words": 47403563,
+          "docs_en": 119879,
+          "source_file": "wiki_010.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s008-c000",
+          "words": 48794202,
+          "docs_en": 119879,
+          "source_file": "wiki_008.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s019-c001",
+          "words": 11934351,
+          "docs_en": 36251,
+          "source_file": "wiki_019.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s005-c000",
+          "words": 48982505,
+          "docs_en": 119879,
+          "source_file": "wiki_005.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s006-c000",
+          "words": 52970620,
+          "docs_en": 119879,
+          "source_file": "wiki_006.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s020-c001",
+          "words": 13051344,
+          "docs_en": 36251,
+          "source_file": "wiki_020.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s012-c000",
+          "words": 44495754,
+          "docs_en": 119879,
+          "source_file": "wiki_012.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s021-c001",
+          "words": 11329435,
+          "docs_en": 36251,
+          "source_file": "wiki_021.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s013-c000",
+          "words": 46862586,
+          "docs_en": 119879,
+          "source_file": "wiki_013.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s004-c000",
+          "words": 59527491,
+          "docs_en": 119879,
+          "source_file": "wiki_004.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s022-c001",
+          "words": 11229435,
+          "docs_en": 36251,
+          "source_file": "wiki_022.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s001-c000",
+          "words": 68778953,
+          "docs_en": 119879,
+          "source_file": "wiki_001.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s002-c000",
+          "words": 63307337,
+          "docs_en": 119879,
+          "source_file": "wiki_002.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s015-c000",
+          "words": 42703904,
+          "docs_en": 119879,
+          "source_file": "wiki_015.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s019-c000",
+          "words": 36854130,
+          "docs_en": 119879,
+          "source_file": "wiki_019.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s024-c001",
+          "words": 12160596,
+          "docs_en": 36251,
+          "source_file": "wiki_024.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s017-c000",
+          "words": 44103542,
+          "docs_en": 119879,
+          "source_file": "wiki_017.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s028-c001",
+          "words": 7413274,
+          "docs_en": 36251,
+          "source_file": "wiki_028.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s026-c001",
+          "words": 11858095,
+          "docs_en": 36251,
+          "source_file": "wiki_026.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s014-c000",
+          "words": 43844906,
+          "docs_en": 119879,
+          "source_file": "wiki_014.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s027-c001",
+          "words": 12809640,
+          "docs_en": 36251,
+          "source_file": "wiki_027.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s000-c000",
+          "words": 83443558,
+          "docs_en": 119879,
+          "source_file": "wiki_000.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s020-c000",
+          "words": 43031653,
+          "docs_en": 119879,
+          "source_file": "wiki_020.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s030-c001",
+          "words": 11376729,
+          "docs_en": 36251,
+          "source_file": "wiki_030.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s023-c000",
+          "words": 40777170,
+          "docs_en": 119879,
+          "source_file": "wiki_023.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s023-c001",
+          "words": 12341120,
+          "docs_en": 36251,
+          "source_file": "wiki_023.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s032-c001",
+          "words": 11390224,
+          "docs_en": 36251,
+          "source_file": "wiki_032.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s024-c000",
+          "words": 42852896,
+          "docs_en": 119879,
+          "source_file": "wiki_024.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s003-c000",
+          "words": 64693085,
+          "docs_en": 119879,
+          "source_file": "wiki_003.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s027-c000",
+          "words": 40329118,
+          "docs_en": 119879,
+          "source_file": "wiki_027.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s033-c001",
+          "words": 12028799,
+          "docs_en": 36251,
+          "source_file": "wiki_033.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s021-c000",
+          "words": 43000016,
+          "docs_en": 119879,
+          "source_file": "wiki_021.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s028-c000",
+          "words": 39344176,
+          "docs_en": 119879,
+          "source_file": "wiki_028.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s018-c000",
+          "words": 44635336,
+          "docs_en": 119879,
+          "source_file": "wiki_018.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s031-c001",
+          "words": 12163635,
+          "docs_en": 36251,
+          "source_file": "wiki_031.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s029-c000",
+          "words": 42231887,
+          "docs_en": 119879,
+          "source_file": "wiki_029.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s030-c000",
+          "words": 39591219,
+          "docs_en": 119879,
+          "source_file": "wiki_030.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s022-c000",
+          "words": 39233599,
+          "docs_en": 119879,
+          "source_file": "wiki_022.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s032-c000",
+          "words": 42015268,
+          "docs_en": 119879,
+          "source_file": "wiki_032.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s031-c000",
+          "words": 41905132,
+          "docs_en": 119879,
+          "source_file": "wiki_031.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s033-c000",
+          "words": 38988554,
+          "docs_en": 119879,
+          "source_file": "wiki_033.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s016-c000",
+          "words": 120059687,
+          "docs_en": 119879,
+          "source_file": "wiki_016.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s034-c000",
+          "words": 41779568,
+          "docs_en": 119879,
+          "source_file": "wiki_034.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s029-c001",
+          "words": 12507075,
+          "docs_en": 36251,
+          "source_file": "wiki_029.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s026-c000",
+          "words": 39881043,
+          "docs_en": 119879,
+          "source_file": "wiki_026.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s025-c001",
+          "words": 11960440,
+          "docs_en": 36251,
+          "source_file": "wiki_025.parquet"
+        },
+        {
+          "kind": "chunk",
+          "chunk_id": "wiki-s025-c000",
+          "words": 42940046,
+          "docs_en": 119879,
+          "source_file": "wiki_025.parquet"
+        }
+      ]
+    },
+    "subs": {
+      "domain": "spoken (film/TV subtitles)",
+      "license": "OpenSubtitles/OPUS, attribution",
+      "words": 1103261872,
+      "docs": 198800294,
+      "files": [
+        {
+          "kind": "source_stream",
+          "url": "https://object.pouta.csc.fi/OPUS-OpenSubtitles/v2024/mono/en.txt.gz",
+          "words": 1103261872,
+          "note": "OPUS-OpenSubtitles v2024 mono/en, capped at target"
+        }
+      ]
+    },
+    "cc2026": {
+      "domain": "recent web (CommonCrawl 2026 WET)",
+      "license": "Common Crawl Terms of Use",
+      "words": 1301987532,
+      "docs": 1549435,
+      "files": [
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091384908.68/wet/CC-MAIN-20260807101845-20260807131845-00719.warc.wet.gz",
+          "bytes": 62456581,
+          "sha256": "ac2c3917c267d46a39d26c86c40660d7f87baef9aae61576f99acdcb283a4c21",
+          "docs_en": 11961,
+          "docs_seen": 20729,
+          "docs_rejected_non_en": 8768,
+          "words": 9592339,
+          "source_file": "cc2026_001.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385010.77/wet/CC-MAIN-20260807175542-20260807205542-00597.warc.wet.gz",
+          "bytes": 64654480,
+          "sha256": "3de21031e2eaf18b584c18db7a7f400499071f74a4ff5fcc1d7b5248422bc064",
+          "docs_en": 12189,
+          "docs_seen": 20849,
+          "docs_rejected_non_en": 8660,
+          "words": 9980158,
+          "source_file": "cc2026_005.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091384908.68/wet/CC-MAIN-20260807101845-20260807131845-00000.warc.wet.gz",
+          "bytes": 63890507,
+          "sha256": "a7637296d56b737e116998fdff0cb2217e56c2541ffaa95d17960a44efda7af6",
+          "docs_en": 12197,
+          "docs_seen": 20614,
+          "docs_rejected_non_en": 8417,
+          "words": 10328569,
+          "source_file": "cc2026_000.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385189.22/wet/CC-MAIN-20260809002508-20260809032508-00669.warc.wet.gz",
+          "bytes": 64477065,
+          "sha256": "f71db6c8573504ebd5221699bb4bc2dcfdf21c1295ba1ee53f233954a930072d",
+          "docs_en": 12115,
+          "docs_seen": 20886,
+          "docs_rejected_non_en": 8771,
+          "words": 10242443,
+          "source_file": "cc2026_019.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385151.2/wet/CC-MAIN-20260808090928-20260808120928-00633.warc.wet.gz",
+          "bytes": 63398645,
+          "sha256": "cd43fafc70c50be9a86c94e39d834e5c39877e07f66a8c4555e5876914093eac",
+          "docs_en": 12273,
+          "docs_seen": 21079,
+          "docs_rejected_non_en": 8806,
+          "words": 10113660,
+          "source_file": "cc2026_012.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385044.1/wet/CC-MAIN-20260808000048-20260808030048-00036.warc.wet.gz",
+          "bytes": 63963140,
+          "sha256": "65aeb0bfa406bea2f527d77f7bfa9bb221bd7c8bb8ae1b3e5dd8c6a38df88eb2",
+          "docs_en": 12318,
+          "docs_seen": 21083,
+          "docs_rejected_non_en": 8765,
+          "words": 9790184,
+          "source_file": "cc2026_007.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385043.60/wet/CC-MAIN-20260807205817-20260807235817-00317.warc.wet.gz",
+          "bytes": 66397468,
+          "sha256": "20885d52f2732b8157de2304b24cb801a7420aac9c912a2ec168ca6315e0fdaf",
+          "docs_en": 12284,
+          "docs_seen": 21069,
+          "docs_rejected_non_en": 8785,
+          "words": 10848142,
+          "source_file": "cc2026_006.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385187.51/wet/CC-MAIN-20260808212239-20260809002239-00230.warc.wet.gz",
+          "bytes": 65668269,
+          "sha256": "4a4ff59211a3caa68caaa5879c21b5e532f01298260648e3b2f5502afc4b44c7",
+          "docs_en": 12223,
+          "docs_seen": 20991,
+          "docs_rejected_non_en": 8768,
+          "words": 10868780,
+          "source_file": "cc2026_017.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385155.29/wet/CC-MAIN-20260808121302-20260808151302-00352.warc.wet.gz",
+          "bytes": 65177319,
+          "sha256": "a1d06fe30adb338d19f9b59238b33457ce3d0e33d213e83bb1dbaba4ea50bcef",
+          "docs_en": 12136,
+          "docs_seen": 21038,
+          "docs_rejected_non_en": 8902,
+          "words": 9996267,
+          "source_file": "cc2026_013.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385148.14/wet/CC-MAIN-20260808060658-20260808090658-00914.warc.wet.gz",
+          "bytes": 66833250,
+          "sha256": "8983fd7bc633d061826e997c132552f5b2ea3a2e54fa073d5689ecaf81cc3930",
+          "docs_en": 12240,
+          "docs_seen": 21101,
+          "docs_rejected_non_en": 8861,
+          "words": 10065068,
+          "source_file": "cc2026_011.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091384964.66/wet/CC-MAIN-20260807103001-20260807133001-00439.warc.wet.gz",
+          "bytes": 62520097,
+          "sha256": "149f2522a431b21f87432cc39677594fe5d262361ba35fbfaa2a91a44e211aa8",
+          "docs_en": 11578,
+          "docs_seen": 19982,
+          "docs_rejected_non_en": 8404,
+          "words": 9842831,
+          "source_file": "cc2026_002.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385196.13/wet/CC-MAIN-20260809032740-20260809062740-00388.warc.wet.gz",
+          "bytes": 64855839,
+          "sha256": "541f036f9d8ff73961dbf891344c50db0d3d6c6b24fb8b0651d55d4ae0b40805",
+          "docs_en": 12216,
+          "docs_seen": 21032,
+          "docs_rejected_non_en": 8816,
+          "words": 10268485,
+          "source_file": "cc2026_020.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385187.51/wet/CC-MAIN-20260808212239-20260809002239-00950.warc.wet.gz",
+          "bytes": 63801053,
+          "sha256": "28d608beeb5735292b685245576015a6c697a36aa03a6bbb46898c0e09fde2c7",
+          "docs_en": 12224,
+          "docs_seen": 21005,
+          "docs_rejected_non_en": 8781,
+          "words": 10088673,
+          "source_file": "cc2026_018.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385205.8/wet/CC-MAIN-20260809063011-20260809093011-00108.warc.wet.gz",
+          "bytes": 65760583,
+          "sha256": "e620ea48074f5f5c360723b316e77f63ee920c369869438e7c2fc83aa50fbd6d",
+          "docs_en": 12039,
+          "docs_seen": 20853,
+          "docs_rejected_non_en": 8814,
+          "words": 11264529,
+          "source_file": "cc2026_021.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385223.27/wet/CC-MAIN-20260809093337-20260809123337-00547.warc.wet.gz",
+          "bytes": 62902886,
+          "sha256": "52363c267ad1c5df7e0b3460a5f789372d8aa565e97dff9dba5472c52af4bd33",
+          "docs_en": 11861,
+          "docs_seen": 20683,
+          "docs_rejected_non_en": 8822,
+          "words": 9654425,
+          "source_file": "cc2026_023.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385233.34/wet/CC-MAIN-20260809123713-20260809153713-00266.warc.wet.gz",
+          "bytes": 64421939,
+          "sha256": "41ace82522d5337c42b48788a50f65e3119ca11a00868a6c57da65e1aa23bd85",
+          "docs_en": 12304,
+          "docs_seen": 20995,
+          "docs_rejected_non_en": 8691,
+          "words": 10415252,
+          "source_file": "cc2026_024.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385258.30/wet/CC-MAIN-20260809184318-20260809214318-00424.warc.wet.gz",
+          "bytes": 63008586,
+          "sha256": "c3cc75e7d0cf8bec069b8297c40f1977dba3cfdda14a571002a18a66f3d5e4b7",
+          "docs_en": 11908,
+          "docs_seen": 20576,
+          "docs_rejected_non_en": 8668,
+          "words": 10004347,
+          "source_file": "cc2026_027.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385295.50/wet/CC-MAIN-20260809214541-20260810004541-00144.warc.wet.gz",
+          "bytes": 64038749,
+          "sha256": "902bf124bc751012c01b4dcad195803ce77ff0565c476bbd4aa6323c9a52e24d",
+          "docs_en": 12115,
+          "docs_seen": 20837,
+          "docs_rejected_non_en": 8722,
+          "words": 10534107,
+          "source_file": "cc2026_028.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385301.19/wet/CC-MAIN-20260810004910-20260810034910-00583.warc.wet.gz",
+          "bytes": 66984571,
+          "sha256": "de3e37c3d12e71889e6504a019f37db7ba273af5e5c5ea9ef9646b7dd7572559",
+          "docs_en": 12200,
+          "docs_seen": 20949,
+          "docs_rejected_non_en": 8749,
+          "words": 10381515,
+          "source_file": "cc2026_030.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385311.32/wet/CC-MAIN-20260810035143-20260810065143-00302.warc.wet.gz",
+          "bytes": 66647738,
+          "sha256": "02d28cdca1b135075020af29f5590105c648c0edc561dc25ee0deae4bcaabb41",
+          "docs_en": 12043,
+          "docs_seen": 20869,
+          "docs_rejected_non_en": 8826,
+          "words": 10468752,
+          "source_file": "cc2026_031.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385322.54/wet/CC-MAIN-20260810065506-20260810095506-00021.warc.wet.gz",
+          "bytes": 64223190,
+          "sha256": "99b8125bc6fc63b44b40f18acff9328f098a7b0bad68be5cea8c4d2509fd6e02",
+          "docs_en": 12018,
+          "docs_seen": 20748,
+          "docs_rejected_non_en": 8730,
+          "words": 10141176,
+          "source_file": "cc2026_032.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385322.54/wet/CC-MAIN-20260810065506-20260810095506-00741.warc.wet.gz",
+          "bytes": 63541183,
+          "sha256": "8db9b5f3bad7dd765e162c5aa2b4cadcbdc87425927156eae16812df015c6670",
+          "docs_en": 12215,
+          "docs_seen": 20932,
+          "docs_rejected_non_en": 8717,
+          "words": 9936552,
+          "source_file": "cc2026_033.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385328.58/wet/CC-MAIN-20260810130157-20260810160157-00899.warc.wet.gz",
+          "bytes": 64556018,
+          "sha256": "8488b3e8acffd51249b66fe2e0adfea24e2ef422497edfec3527900b6fce8666",
+          "docs_en": 12087,
+          "docs_seen": 20815,
+          "docs_rejected_non_en": 8728,
+          "words": 10520266,
+          "source_file": "cc2026_036.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385350.21/wet/CC-MAIN-20260810160426-20260810190426-00618.warc.wet.gz",
+          "bytes": 63256642,
+          "sha256": "fad37376e752f8d217c3c813a41c2b61bbb827d3a50b9cd557ffe1856bcb461b",
+          "docs_en": 12037,
+          "docs_seen": 20711,
+          "docs_rejected_non_en": 8674,
+          "words": 10170039,
+          "source_file": "cc2026_037.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385254.10/wet/CC-MAIN-20260809154047-20260809184047-00705.warc.wet.gz",
+          "bytes": 65658191,
+          "sha256": "cbdc03eec63e23700b3058c74a74dfc81c29c36e1a317b333d08c7075c39a2d4",
+          "docs_en": 12365,
+          "docs_seen": 21157,
+          "docs_rejected_non_en": 8792,
+          "words": 10964547,
+          "source_file": "cc2026_026.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385385.9/wet/CC-MAIN-20260810221116-20260811011116-00057.warc.wet.gz",
+          "bytes": 64180242,
+          "sha256": "96a4913c8e37808bf66ae2aec6e6bfdf27cdc58e65058ede58467361307d342e",
+          "docs_en": 12255,
+          "docs_seen": 20908,
+          "docs_rejected_non_en": 8653,
+          "words": 10149996,
+          "source_file": "cc2026_039.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385381.39/wet/CC-MAIN-20260810190756-20260810220756-00338.warc.wet.gz",
+          "bytes": 64705143,
+          "sha256": "a4b43d68bcfab1f70c3f5ddb202a6596008b6b2fad1220e59155b84e5003dca5",
+          "docs_en": 12286,
+          "docs_seen": 21034,
+          "docs_rejected_non_en": 8748,
+          "words": 10199055,
+          "source_file": "cc2026_038.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385401.5/wet/CC-MAIN-20260811011751-20260811041751-00496.warc.wet.gz",
+          "bytes": 63203804,
+          "sha256": "0fa218d53137780eaa91838dd8c750c87cd709e24d12211faf73066eefdfe84e",
+          "docs_en": 12020,
+          "docs_seen": 20787,
+          "docs_rejected_non_en": 8767,
+          "words": 10332490,
+          "source_file": "cc2026_041.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385413.38/wet/CC-MAIN-20260811042123-20260811072123-00216.warc.wet.gz",
+          "bytes": 67417848,
+          "sha256": "9a036f9f04188805f15b9678f787a02670f56c082206224a51c61d30d7ce0b90",
+          "docs_en": 12080,
+          "docs_seen": 20979,
+          "docs_rejected_non_en": 8899,
+          "words": 10113655,
+          "source_file": "cc2026_042.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385233.34/wet/CC-MAIN-20260809123713-20260809153713-00985.warc.wet.gz",
+          "bytes": 63449537,
+          "sha256": "775e0dcbcdb1a188bad85638f49178f7a0f491f4e8e45d8767ed4fb1686bb4a0",
+          "docs_en": 12140,
+          "docs_seen": 20781,
+          "docs_rejected_non_en": 8641,
+          "words": 10103158,
+          "source_file": "cc2026_025.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385413.38/wet/CC-MAIN-20260811042123-20260811072123-00935.warc.wet.gz",
+          "bytes": 64613730,
+          "sha256": "a6d2679a46f058da258a441f3a6786835d1e9ad97b38004dbe0628f69cf7c3b6",
+          "docs_en": 12474,
+          "docs_seen": 21233,
+          "docs_rejected_non_en": 8759,
+          "words": 10540811,
+          "source_file": "cc2026_043.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385416.52/wet/CC-MAIN-20260811102717-20260811132717-00374.warc.wet.gz",
+          "bytes": 64900961,
+          "sha256": "46dbdd618b0e0358aa82d62070f1d5ebaad1a953c0b2e641a905f7d2ca3985ea",
+          "docs_en": 12318,
+          "docs_seen": 21080,
+          "docs_rejected_non_en": 8762,
+          "words": 9929812,
+          "source_file": "cc2026_045.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385428.43/wet/CC-MAIN-20260811132950-20260811162950-00093.warc.wet.gz",
+          "bytes": 64683441,
+          "sha256": "f1c83c83994cb91e32b15d5aedb4ad1db9448564812ca983d7ea4bca85898639",
+          "docs_en": 12134,
+          "docs_seen": 20802,
+          "docs_rejected_non_en": 8668,
+          "words": 10420850,
+          "source_file": "cc2026_046.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385385.9/wet/CC-MAIN-20260810221116-20260811011116-00777.warc.wet.gz",
+          "bytes": 64057636,
+          "sha256": "1cee4bb8133da9508ed9e6e8f4b7d547435de49709177f2ab7ecae9639ff2624",
+          "docs_en": 12027,
+          "docs_seen": 20859,
+          "docs_rejected_non_en": 8832,
+          "words": 10156274,
+          "source_file": "cc2026_040.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385431.4/wet/CC-MAIN-20260811163319-20260811193319-00532.warc.wet.gz",
+          "bytes": 65023948,
+          "sha256": "db085b906e17d5b8d920f49a8c8e5575e01662530cdf22394f0fedba466189d4",
+          "docs_en": 12079,
+          "docs_seen": 20908,
+          "docs_rejected_non_en": 8829,
+          "words": 10258478,
+          "source_file": "cc2026_048.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385438.28/wet/CC-MAIN-20260811193657-20260811223657-00971.warc.wet.gz",
+          "bytes": 63600668,
+          "sha256": "5921eed96a03872db15e66fa8253a512dcd7d6af75a833e752c38aecef17c228",
+          "docs_en": 11977,
+          "docs_seen": 20804,
+          "docs_rejected_non_en": 8827,
+          "words": 9676744,
+          "source_file": "cc2026_050.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385428.43/wet/CC-MAIN-20260811132950-20260811162950-00813.warc.wet.gz",
+          "bytes": 67091300,
+          "sha256": "05a56f50d645b2ca330f096a41da8b55919bfad2690ecef65353b65bd8f61e04",
+          "docs_en": 12394,
+          "docs_seen": 21182,
+          "docs_rejected_non_en": 8788,
+          "words": 11361420,
+          "source_file": "cc2026_047.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385444.26/wet/CC-MAIN-20260812014208-20260812044208-00410.warc.wet.gz",
+          "bytes": 64389174,
+          "sha256": "06f792855987f8784d581eb766c529287d8bbd6bb0d721f7393e3facf7b2b1aa",
+          "docs_en": 12269,
+          "docs_seen": 20938,
+          "docs_rejected_non_en": 8669,
+          "words": 10469593,
+          "source_file": "cc2026_052.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385452.6/wet/CC-MAIN-20260812044543-20260812074543-00129.warc.wet.gz",
+          "bytes": 63036410,
+          "sha256": "f431541b87cedbce10998383c131f5c492026c0ef84ca9e783d0bf5d85031584",
+          "docs_en": 12361,
+          "docs_seen": 21070,
+          "docs_rejected_non_en": 8709,
+          "words": 10249986,
+          "source_file": "cc2026_053.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385166.7/wet/CC-MAIN-20260808151638-20260808181638-00791.warc.wet.gz",
+          "bytes": 66506877,
+          "sha256": "7ac8bace8d118cf982234fd9bf2cc1e0a1fe71fdd4fb34dd0fd0afbb35b1ab6e",
+          "docs_en": 12217,
+          "docs_seen": 20990,
+          "docs_rejected_non_en": 8773,
+          "words": 11015665,
+          "source_file": "cc2026_015.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385460.47/wet/CC-MAIN-20260812074805-20260812104805-00568.warc.wet.gz",
+          "bytes": 63391473,
+          "sha256": "cb22075dd888e1f3f96dc6418596b06db601263c30af72ee4812716976bd68d4",
+          "docs_en": 12106,
+          "docs_seen": 20770,
+          "docs_rejected_non_en": 8664,
+          "words": 9371120,
+          "source_file": "cc2026_055.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385464.24/wet/CC-MAIN-20260812105035-20260812135035-00287.warc.wet.gz",
+          "bytes": 64135530,
+          "sha256": "b5552283a8f878be93238e99ca8d635eefda3e5557f4b7647a88be30b7ec1e1e",
+          "docs_en": 12272,
+          "docs_seen": 20932,
+          "docs_rejected_non_en": 8660,
+          "words": 10181922,
+          "source_file": "cc2026_056.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385515.44/wet/CC-MAIN-20260812135259-20260812165259-00007.warc.wet.gz",
+          "bytes": 64686261,
+          "sha256": "f948448560fe43affa6cfda9092e1431f88e3a19546902a8c250ed458611ed70",
+          "docs_en": 12085,
+          "docs_seen": 20758,
+          "docs_rejected_non_en": 8673,
+          "words": 9881776,
+          "source_file": "cc2026_057.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385515.44/wet/CC-MAIN-20260812135259-20260812165259-00726.warc.wet.gz",
+          "bytes": 63863686,
+          "sha256": "96bce0c4a5ab98430367bb97a93fc0079872f83ae1bcb0fe42251c673dced3c5",
+          "docs_en": 11967,
+          "docs_seen": 20643,
+          "docs_rejected_non_en": 8676,
+          "words": 10423298,
+          "source_file": "cc2026_058.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385525.56/wet/CC-MAIN-20260812165636-20260812195636-00446.warc.wet.gz",
+          "bytes": 64983876,
+          "sha256": "c245c27d0a8ace480515216fdcec146f7d9503e208eba2b468672f60c0017626",
+          "docs_en": 12071,
+          "docs_seen": 20842,
+          "docs_rejected_non_en": 8771,
+          "words": 10516674,
+          "source_file": "cc2026_059.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385536.64/wet/CC-MAIN-20260812200004-20260812230004-00165.warc.wet.gz",
+          "bytes": 66104387,
+          "sha256": "c20cefba0df220996d021220b4c0e29be279274545f5ae8d9e6c87dba5da35bc",
+          "docs_en": 12115,
+          "docs_seen": 20921,
+          "docs_rejected_non_en": 8806,
+          "words": 10122814,
+          "source_file": "cc2026_060.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385536.64/wet/CC-MAIN-20260812200004-20260812230004-00884.warc.wet.gz",
+          "bytes": 64082381,
+          "sha256": "c490ca34131d01323ce11580aeb1e40e0f335bd573e6dd2b4df85506226dc609",
+          "docs_en": 12221,
+          "docs_seen": 21017,
+          "docs_rejected_non_en": 8796,
+          "words": 10221830,
+          "source_file": "cc2026_061.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385543.75/wet/CC-MAIN-20260812230232-20260813020232-00604.warc.wet.gz",
+          "bytes": 62490811,
+          "sha256": "170d698f193b242014883ca1f2c88b9d1f938a8749263f82d6a4cdebb6e69799",
+          "docs_en": 11974,
+          "docs_seen": 20657,
+          "docs_rejected_non_en": 8683,
+          "words": 9845262,
+          "source_file": "cc2026_062.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385546.31/wet/CC-MAIN-20260813020609-20260813050609-00323.warc.wet.gz",
+          "bytes": 64289480,
+          "sha256": "69e201812ecbdba4619e7fb8451967925538a2428b5832f90dc0ff6f80f2e5f3",
+          "docs_en": 11954,
+          "docs_seen": 20751,
+          "docs_rejected_non_en": 8797,
+          "words": 9802953,
+          "source_file": "cc2026_063.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385439.63/wet/CC-MAIN-20260811223931-20260812013931-00690.warc.wet.gz",
+          "bytes": 64441328,
+          "sha256": "8c0afa2a7d6a27054a3064e1d65e60c224801bfbd240631e2676250b2f7066a8",
+          "docs_en": 12177,
+          "docs_seen": 20957,
+          "docs_rejected_non_en": 8780,
+          "words": 10136541,
+          "source_file": "cc2026_051.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385452.6/wet/CC-MAIN-20260812044543-20260812074543-00849.warc.wet.gz",
+          "bytes": 61213482,
+          "sha256": "5a46e5489c1d67c69fe0d8162f2ce3b9a61586046ba59a025367686a7ff65e14",
+          "docs_en": 12023,
+          "docs_seen": 20774,
+          "docs_rejected_non_en": 8751,
+          "words": 9569748,
+          "source_file": "cc2026_054.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385565.71/wet/CC-MAIN-20260813081409-20260813111409-00482.warc.wet.gz",
+          "bytes": 64988318,
+          "sha256": "2a935b2a06a8c07d5d031b16047736342d95aff3c0063cc127293aa8c9a791c3",
+          "docs_en": 12255,
+          "docs_seen": 20832,
+          "docs_rejected_non_en": 8577,
+          "words": 9885250,
+          "source_file": "cc2026_066.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385574.53/wet/CC-MAIN-20260813111745-20260813141745-00201.warc.wet.gz",
+          "bytes": 68110327,
+          "sha256": "157a1dee689b0f315662fe808f03a3363484cfaff6b2ccf281436cfa0e0c1c9c",
+          "docs_en": 12173,
+          "docs_seen": 21005,
+          "docs_rejected_non_en": 8832,
+          "words": 10834734,
+          "source_file": "cc2026_067.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385574.53/wet/CC-MAIN-20260813111745-20260813141745-00920.warc.wet.gz",
+          "bytes": 64462407,
+          "sha256": "26df2123d85b9cf2739dd33ca4b9c5bde6e5b778112b354531c9b343ed1238d1",
+          "docs_en": 11858,
+          "docs_seen": 20426,
+          "docs_rejected_non_en": 8568,
+          "words": 10086478,
+          "source_file": "cc2026_068.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385582.55/wet/CC-MAIN-20260813142326-20260813172326-00640.warc.wet.gz",
+          "bytes": 65688377,
+          "sha256": "96f51ba362c7ba96afe8a0df7b58c653154973d5da1d81b9a0a5fd1e315a3b0b",
+          "docs_en": 12068,
+          "docs_seen": 20864,
+          "docs_rejected_non_en": 8796,
+          "words": 11367788,
+          "source_file": "cc2026_069.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385607.42/wet/CC-MAIN-20260813202929-20260813232929-00079.warc.wet.gz",
+          "bytes": 64009836,
+          "sha256": "61ac18a6ad3347b861b29a60eb7a67c84dbf222aa66484e6ce5dd0fef9ed7eaa",
+          "docs_en": 11869,
+          "docs_seen": 20715,
+          "docs_rejected_non_en": 8846,
+          "words": 10473710,
+          "source_file": "cc2026_071.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385607.42/wet/CC-MAIN-20260813202929-20260813232929-00798.warc.wet.gz",
+          "bytes": 61999735,
+          "sha256": "215eb64adb395ed1f4211e41586db1119fc03f0ccea77e8543fd422ffcbc3c7f",
+          "docs_en": 11832,
+          "docs_seen": 20348,
+          "docs_rejected_non_en": 8516,
+          "words": 9685640,
+          "source_file": "cc2026_072.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385610.33/wet/CC-MAIN-20260813233259-20260814023259-00517.warc.wet.gz",
+          "bytes": 62188602,
+          "sha256": "a8ff39472adfcd71c7a661e4af9e928b9455c5af2415df024c14924d7ca8a9a1",
+          "docs_en": 12065,
+          "docs_seen": 20454,
+          "docs_rejected_non_en": 8389,
+          "words": 9773505,
+          "source_file": "cc2026_073.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385622.16/wet/CC-MAIN-20260814023636-20260814053636-00237.warc.wet.gz",
+          "bytes": 63706790,
+          "sha256": "6227d1d6c452fdecf5a60f4a4c2acaa26a025ca30a94b09abf47fc93d265bc29",
+          "docs_en": 12443,
+          "docs_seen": 21102,
+          "docs_rejected_non_en": 8659,
+          "words": 10343058,
+          "source_file": "cc2026_074.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385622.16/wet/CC-MAIN-20260814023636-20260814053636-00956.warc.wet.gz",
+          "bytes": 61071778,
+          "sha256": "25ffc90f17a6b5d7796c53634f0352e2cd54cb8156d896f497920daedf8196b0",
+          "docs_en": 12165,
+          "docs_seen": 20730,
+          "docs_rejected_non_en": 8565,
+          "words": 9473473,
+          "source_file": "cc2026_075.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385689.11/wet/CC-MAIN-20260814053915-20260814083915-00676.warc.wet.gz",
+          "bytes": 62646618,
+          "sha256": "bb29ccd7b352035cdd2ac2844392b7f4585172d7efb95fe2517a51b81b6b596a",
+          "docs_en": 12199,
+          "docs_seen": 20866,
+          "docs_rejected_non_en": 8667,
+          "words": 10313414,
+          "source_file": "cc2026_076.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385699.0/wet/CC-MAIN-20260814084149-20260814114149-00395.warc.wet.gz",
+          "bytes": 62495731,
+          "sha256": "6ef6781b4282e77926874350dd786938ccd595f156d48b3346438412292589ee",
+          "docs_en": 12442,
+          "docs_seen": 20946,
+          "docs_rejected_non_en": 8504,
+          "words": 9853577,
+          "source_file": "cc2026_077.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385710.35/wet/CC-MAIN-20260814114419-20260814144419-00115.warc.wet.gz",
+          "bytes": 63488760,
+          "sha256": "9a3982ef1310d39da01d4a971e1e2093887d1adfdac3d0160d23a8cbbfff5972",
+          "docs_en": 12037,
+          "docs_seen": 20795,
+          "docs_rejected_non_en": 8758,
+          "words": 9750187,
+          "source_file": "cc2026_078.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385205.8/wet/CC-MAIN-20260809063011-20260809093011-00827.warc.wet.gz",
+          "bytes": 64760726,
+          "sha256": "6716d5899077d7ca7a26a36bdbf67c11b2c3d0378a451729e5529425394bc7fc",
+          "docs_en": 12357,
+          "docs_seen": 21264,
+          "docs_rejected_non_en": 8907,
+          "words": 10640890,
+          "source_file": "cc2026_022.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385738.18/wet/CC-MAIN-20260814144954-20260814174954-00553.warc.wet.gz",
+          "bytes": 63829836,
+          "sha256": "2fd57a1daf97a4f28f9216ac87a0bc9ae16c3566dbedefde83a830ec9ad02a5e",
+          "docs_en": 12091,
+          "docs_seen": 20897,
+          "docs_rejected_non_en": 8806,
+          "words": 10111709,
+          "source_file": "cc2026_080.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385751.81/wet/CC-MAIN-20260814175232-20260814205232-00273.warc.wet.gz",
+          "bytes": 66627793,
+          "sha256": "5b7bf839e50dcc182701824285fdc1a082df2ae8f2d7b4212ecc5f6ee571c6bc",
+          "docs_en": 12191,
+          "docs_seen": 20943,
+          "docs_rejected_non_en": 8752,
+          "words": 10506110,
+          "source_file": "cc2026_081.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385751.81/wet/CC-MAIN-20260814175232-20260814205232-00992.warc.wet.gz",
+          "bytes": 65857468,
+          "sha256": "b6f62cfe2396e6df9854198554a8da380c35ee96009a5e6c7866b2901e15eec0",
+          "docs_en": 12054,
+          "docs_seen": 20864,
+          "docs_rejected_non_en": 8810,
+          "words": 11188250,
+          "source_file": "cc2026_082.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385757.91/wet/CC-MAIN-20260814205606-20260814235606-00712.warc.wet.gz",
+          "bytes": 63119316,
+          "sha256": "4ad6e0298630d0215c991f1238356ab4e9ed4960596cec2aeeef4954d8857d14",
+          "docs_en": 11910,
+          "docs_seen": 20724,
+          "docs_rejected_non_en": 8814,
+          "words": 9963810,
+          "source_file": "cc2026_083.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385800.97/wet/CC-MAIN-20260814235839-20260815025839-00431.warc.wet.gz",
+          "bytes": 61459079,
+          "sha256": "bfdea3bc477723ec97020391638b1bc225f49c33e6a8095588c166f01c4ed8fa",
+          "docs_en": 11706,
+          "docs_seen": 20323,
+          "docs_rejected_non_en": 8617,
+          "words": 9527033,
+          "source_file": "cc2026_084.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385801.49/wet/CC-MAIN-20260815030115-20260815060115-00150.warc.wet.gz",
+          "bytes": 64675329,
+          "sha256": "6865b11c01d837b94fa7bfc9cd4d37ee52f834417461a456276b0066f4452c97",
+          "docs_en": 12152,
+          "docs_seen": 21016,
+          "docs_rejected_non_en": 8864,
+          "words": 10593201,
+          "source_file": "cc2026_085.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385801.49/wet/CC-MAIN-20260815030115-20260815060115-00870.warc.wet.gz",
+          "bytes": 63080454,
+          "sha256": "79b867d11f38b86d342d205381467bd61b2dbf6d09d8a8dcb86bb11fd9a8a2e6",
+          "docs_en": 12181,
+          "docs_seen": 20900,
+          "docs_rejected_non_en": 8719,
+          "words": 10054492,
+          "source_file": "cc2026_086.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385148.14/wet/CC-MAIN-20260808060658-20260808090658-00194.warc.wet.gz",
+          "bytes": 64236545,
+          "sha256": "d8c79f23eaca20625a7211c834a6d0a4af51485ca788ecee67c84c5228904cab",
+          "docs_en": 12261,
+          "docs_seen": 21025,
+          "docs_rejected_non_en": 8764,
+          "words": 10283029,
+          "source_file": "cc2026_010.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385823.62/wet/CC-MAIN-20260815090613-20260815120613-00309.warc.wet.gz",
+          "bytes": 65286411,
+          "sha256": "7f289a39bef09134a71f5a4a0299ecbaf0b2d7cddd3541a86b9b3777ddd3cebd",
+          "docs_en": 11984,
+          "docs_seen": 20693,
+          "docs_rejected_non_en": 8709,
+          "words": 10630047,
+          "source_file": "cc2026_088.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091384984.23/wet/CC-MAIN-20260807145234-20260807175234-00158.warc.wet.gz",
+          "bytes": 64542535,
+          "sha256": "ea7a4a2bf75146d6ee9a20e1b0bacc8e21f47799be5aa2405940a0b50fe7e773",
+          "docs_en": 12277,
+          "docs_seen": 21092,
+          "docs_rejected_non_en": 8815,
+          "words": 10118301,
+          "source_file": "cc2026_003.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385836.20/wet/CC-MAIN-20260815120940-20260815150940-00748.warc.wet.gz",
+          "bytes": 65378759,
+          "sha256": "523c2be888df49090c60bca8d93ad8f5bdd61bce94a6bc59f060ffa025102b83",
+          "docs_en": 12272,
+          "docs_seen": 20922,
+          "docs_rejected_non_en": 8650,
+          "words": 10601471,
+          "source_file": "cc2026_090.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385840.37/wet/CC-MAIN-20260815151410-20260815181410-00467.warc.wet.gz",
+          "bytes": 65975230,
+          "sha256": "cf14f15e974239a9749e48cfaaec6baf74de7e0301209e7b3fde8727927f8ab4",
+          "docs_en": 12212,
+          "docs_seen": 21159,
+          "docs_rejected_non_en": 8947,
+          "words": 10738785,
+          "source_file": "cc2026_091.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385858.80/wet/CC-MAIN-20260815181639-20260815211639-00186.warc.wet.gz",
+          "bytes": 64450537,
+          "sha256": "b72cc8ee8bc359ba0605e116cc62686a01e27d9b0a49ca532387257c6b93af6e",
+          "docs_en": 12087,
+          "docs_seen": 20851,
+          "docs_rejected_non_en": 8764,
+          "words": 10473791,
+          "source_file": "cc2026_092.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385858.80/wet/CC-MAIN-20260815181639-20260815211639-00906.warc.wet.gz",
+          "bytes": 64346058,
+          "sha256": "01b633dd1843105a56d8e97a3304fabbfe2d62432fc92d60f5712000a2cf5e14",
+          "docs_en": 12092,
+          "docs_seen": 20888,
+          "docs_rejected_non_en": 8796,
+          "words": 9942779,
+          "source_file": "cc2026_093.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385861.46/wet/CC-MAIN-20260815212008-20260816002008-00625.warc.wet.gz",
+          "bytes": 65942188,
+          "sha256": "2b3a59f2694cc4b3ec35e95d2b5dda14ab54dd6960418679ec193fa5764cd462",
+          "docs_en": 12269,
+          "docs_seen": 21034,
+          "docs_rejected_non_en": 8765,
+          "words": 10749097,
+          "source_file": "cc2026_094.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385928.59/wet/CC-MAIN-20260816002236-20260816032236-00345.warc.wet.gz",
+          "bytes": 65743843,
+          "sha256": "488c4693c3539124b4cf91b5f26c95ac9d9abc1846c916fd175f6d450c8f02af",
+          "docs_en": 12283,
+          "docs_seen": 20943,
+          "docs_rejected_non_en": 8660,
+          "words": 10156417,
+          "source_file": "cc2026_095.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385934.3/wet/CC-MAIN-20260816032507-20260816062507-00064.warc.wet.gz",
+          "bytes": 62480440,
+          "sha256": "5be169bf5e6d14c1ed417aa745f37ed892e543bf9629f35744b9c56d7174a72e",
+          "docs_en": 12316,
+          "docs_seen": 21002,
+          "docs_rejected_non_en": 8686,
+          "words": 9606748,
+          "source_file": "cc2026_096.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385934.3/wet/CC-MAIN-20260816032507-20260816062507-00783.warc.wet.gz",
+          "bytes": 62607392,
+          "sha256": "a9350501a89c57836c7b1d28f0657a7cec55cefa288728d3c1f7a49fba683b7d",
+          "docs_en": 12119,
+          "docs_seen": 20657,
+          "docs_rejected_non_en": 8538,
+          "words": 10071694,
+          "source_file": "cc2026_097.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385953.65/wet/CC-MAIN-20260816062741-20260816092741-00503.warc.wet.gz",
+          "bytes": 60725168,
+          "sha256": "f755d3c6481ab5be6d134b33ae17f11608dc72d0b080241796d7503995f9c3b1",
+          "docs_en": 12215,
+          "docs_seen": 20847,
+          "docs_rejected_non_en": 8632,
+          "words": 9427825,
+          "source_file": "cc2026_098.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385961.45/wet/CC-MAIN-20260816093115-20260816123115-00222.warc.wet.gz",
+          "bytes": 62809767,
+          "sha256": "6a3d222b4e3aade152788b304d481b99c4c406d9c7d1d036985ab7a2d0cf672c",
+          "docs_en": 12322,
+          "docs_seen": 20962,
+          "docs_rejected_non_en": 8640,
+          "words": 9743306,
+          "source_file": "cc2026_099.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385961.45/wet/CC-MAIN-20260816093115-20260816123115-00942.warc.wet.gz",
+          "bytes": 62933978,
+          "sha256": "9ca2bdea1ad73f307b7f3783a19109f71b51fc4cb5511b0a9f92c86f587d4a3f",
+          "docs_en": 12412,
+          "docs_seen": 20945,
+          "docs_rejected_non_en": 8533,
+          "words": 9685065,
+          "source_file": "cc2026_100.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385964.96/wet/CC-MAIN-20260816123341-20260816153341-00661.warc.wet.gz",
+          "bytes": 63791682,
+          "sha256": "ae1f6cae6bd779f7a7c8044d681d716d7450a16bf40a38eea01feb9230fb991e",
+          "docs_en": 12376,
+          "docs_seen": 20962,
+          "docs_rejected_non_en": 8586,
+          "words": 9898154,
+          "source_file": "cc2026_101.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385982.61/wet/CC-MAIN-20260816153610-20260816183610-00381.warc.wet.gz",
+          "bytes": 64052107,
+          "sha256": "449b4af2a1bedf6f0ec2c0e14f4d909388373848f2f3507682e31e33eebfd697",
+          "docs_en": 12280,
+          "docs_seen": 21041,
+          "docs_rejected_non_en": 8761,
+          "words": 10157603,
+          "source_file": "cc2026_102.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385993.82/wet/CC-MAIN-20260816183940-20260816213940-00100.warc.wet.gz",
+          "bytes": 65073220,
+          "sha256": "7204c9d0cae8008fef9733550f815c47b2573cfdca07f252ee6c9f1e2eaaf2ef",
+          "docs_en": 12074,
+          "docs_seen": 20771,
+          "docs_rejected_non_en": 8697,
+          "words": 9847371,
+          "source_file": "cc2026_103.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385993.82/wet/CC-MAIN-20260816183940-20260816213940-00819.warc.wet.gz",
+          "bytes": 65497382,
+          "sha256": "073f4102722c511904839125429135ad974965f2da374f80403f0a352af388c0",
+          "docs_en": 12121,
+          "docs_seen": 20979,
+          "docs_rejected_non_en": 8858,
+          "words": 10289237,
+          "source_file": "cc2026_104.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091386141.90/wet/CC-MAIN-20260816214409-20260817004409-00539.warc.wet.gz",
+          "bytes": 65203906,
+          "sha256": "c8f01e08c0fdba9ce3dfae3ef36f1121e17fcaf4ea424f27967240bfbae6c2f9",
+          "docs_en": 12068,
+          "docs_seen": 20801,
+          "docs_rejected_non_en": 8733,
+          "words": 10553156,
+          "source_file": "cc2026_105.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091387097.89/wet/CC-MAIN-20260817004738-20260817034738-00258.warc.wet.gz",
+          "bytes": 62473057,
+          "sha256": "7ae1f8e559417f4fccc6882e47309d60a891b1b3925aed364dc19246f8e2d035",
+          "docs_en": 12044,
+          "docs_seen": 20593,
+          "docs_rejected_non_en": 8549,
+          "words": 9989518,
+          "source_file": "cc2026_106.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091387097.89/wet/CC-MAIN-20260817004738-20260817034738-00978.warc.wet.gz",
+          "bytes": 62872827,
+          "sha256": "d68bb094288ac27c4e84fa186655ea1e0d419a01510342f4d78c7948b15f1e30",
+          "docs_en": 11863,
+          "docs_seen": 20508,
+          "docs_rejected_non_en": 8645,
+          "words": 9592688,
+          "source_file": "cc2026_107.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091387114.72/wet/CC-MAIN-20260817035111-20260817065111-00697.warc.wet.gz",
+          "bytes": 63655568,
+          "sha256": "69c25bcd45ebd4ab9a59cdeeaa52ac5b226c0ee8e8088664fff07528d0d5196e",
+          "docs_en": 11953,
+          "docs_seen": 20640,
+          "docs_rejected_non_en": 8687,
+          "words": 10008458,
+          "source_file": "cc2026_108.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091387263.73/wet/CC-MAIN-20260817095816-20260817125816-00136.warc.wet.gz",
+          "bytes": 61965325,
+          "sha256": "38c3c8e467f9bdcdc89c8b71c8f4084a1656bf60a9dcd18e9828c2f7d50e2ae4",
+          "docs_en": 12102,
+          "docs_seen": 20518,
+          "docs_rejected_non_en": 8416,
+          "words": 9699563,
+          "source_file": "cc2026_110.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091387263.73/wet/CC-MAIN-20260817095816-20260817125816-00855.warc.wet.gz",
+          "bytes": 63332815,
+          "sha256": "8f32122c061239800f1a45b7c155e176d5bcbdd91714938a1ad55d3508757045",
+          "docs_en": 12167,
+          "docs_seen": 20741,
+          "docs_rejected_non_en": 8574,
+          "words": 9807992,
+          "source_file": "cc2026_111.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091387120.69/wet/CC-MAIN-20260817065350-20260817095350-00416.warc.wet.gz",
+          "bytes": 63842077,
+          "sha256": "c23a31640e3e004cafa348fbc8a47d92484dda34f4cf2b94c704f063ebe800ff",
+          "docs_en": 12014,
+          "docs_seen": 20665,
+          "docs_rejected_non_en": 8651,
+          "words": 10385923,
+          "source_file": "cc2026_109.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091673393.86/wet/CC-MAIN-20260817160715-20260817190715-00294.warc.wet.gz",
+          "bytes": 63162078,
+          "sha256": "df6d1ad8f24979ad80a00842d0445e408151587687e8517fe117c4c843b56878",
+          "docs_en": 11991,
+          "docs_seen": 20764,
+          "docs_rejected_non_en": 8773,
+          "words": 9904195,
+          "source_file": "cc2026_113.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091674238.48/wet/CC-MAIN-20260817191046-20260817221046-00014.warc.wet.gz",
+          "bytes": 63679706,
+          "sha256": "e4cad64b2e0f01a1e3ddf78d4b4f3f1c91436ab07be529f1ed9b76f6052c8394",
+          "docs_en": 11902,
+          "docs_seen": 20691,
+          "docs_rejected_non_en": 8789,
+          "words": 10143848,
+          "source_file": "cc2026_114.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091674238.48/wet/CC-MAIN-20260817191046-20260817221046-00733.warc.wet.gz",
+          "bytes": 65110795,
+          "sha256": "88e9dedcea9c30b261a97d67985c7cb7b8a83d49b822fe817e3ea7f4b2aa1cb8",
+          "docs_en": 12224,
+          "docs_seen": 21014,
+          "docs_rejected_non_en": 8790,
+          "words": 10140520,
+          "source_file": "cc2026_115.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091674763.85/wet/CC-MAIN-20260817221418-20260818011418-00452.warc.wet.gz",
+          "bytes": 63830965,
+          "sha256": "9a67c6655b21ba8a50619384f7741af4a258735866fa76a02cfdb92ceae0c977",
+          "docs_en": 12096,
+          "docs_seen": 20987,
+          "docs_rejected_non_en": 8891,
+          "words": 9823094,
+          "source_file": "cc2026_116.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091672082.57/wet/CC-MAIN-20260817130242-20260817160242-00575.warc.wet.gz",
+          "bytes": 64057244,
+          "sha256": "c8e36b5b245583b486b4ff9b0d79d39181b98e9603d147718e6c793f10a855dc",
+          "docs_en": 11884,
+          "docs_seen": 20733,
+          "docs_rejected_non_en": 8849,
+          "words": 10027860,
+          "source_file": "cc2026_112.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385553.12/wet/CC-MAIN-20260813050936-20260813080936-00043.warc.wet.gz",
+          "bytes": 63461112,
+          "sha256": "ff65de73a7b8cdfbb0340058515ae1066f5751fc224f1465343623d4841771b1",
+          "docs_en": 11826,
+          "docs_seen": 20413,
+          "docs_rejected_non_en": 8587,
+          "words": 9516553,
+          "source_file": "cc2026_064.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091675778.67/wet/CC-MAIN-20260818011649-20260818041649-00172.warc.wet.gz",
+          "bytes": 62440114,
+          "sha256": "82fc92f07ce256104dca90e5de0db04db11eaacd68355da28c72bab78f588a43",
+          "docs_en": 12017,
+          "docs_seen": 20809,
+          "docs_rejected_non_en": 8792,
+          "words": 9726649,
+          "source_file": "cc2026_117.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091677317.76/wet/CC-MAIN-20260818072149-20260818102149-00330.warc.wet.gz",
+          "bytes": 62051114,
+          "sha256": "0f7f755222d765240cfd8814ddd44c7426c8f59a7fb3678dee90e244e18bb09d",
+          "docs_en": 12063,
+          "docs_seen": 20725,
+          "docs_rejected_non_en": 8662,
+          "words": 9865838,
+          "source_file": "cc2026_120.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091676506.70/wet/CC-MAIN-20260818042017-20260818072017-00611.warc.wet.gz",
+          "bytes": 61942295,
+          "sha256": "212c1d43be729222fc4c6b7d1d9e54d10be897c388422e8b6246b6d73d24923a",
+          "docs_en": 12207,
+          "docs_seen": 20715,
+          "docs_rejected_non_en": 8508,
+          "words": 9767624,
+          "source_file": "cc2026_119.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091677690.83/wet/CC-MAIN-20260818102432-20260818132432-00769.warc.wet.gz",
+          "bytes": 60917009,
+          "sha256": "aa75eb96d7653a2fd3318fcc9c12f0cebe87b79409e5483cb2e0412c24477b0f",
+          "docs_en": 11878,
+          "docs_seen": 20590,
+          "docs_rejected_non_en": 8712,
+          "words": 9351735,
+          "source_file": "cc2026_122.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/wet/CC-MAIN-20260818132700-20260818162700-00488.warc.wet.gz",
+          "bytes": 63654168,
+          "sha256": "a363e64202cae2dbb06d4aa0c67590e6c18dcd17bc8210d4e480e2d9773d6b1a",
+          "docs_en": 12186,
+          "docs_seen": 20940,
+          "docs_rejected_non_en": 8754,
+          "words": 9923672,
+          "source_file": "cc2026_123.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091678506.74/wet/CC-MAIN-20260818162855-20260818192855-00208.warc.wet.gz",
+          "bytes": 62473176,
+          "sha256": "5f7fddca9f8369a847683ec83f8b09bd34613be1bba170e27c4628d8de2268e0",
+          "docs_en": 11782,
+          "docs_seen": 20412,
+          "docs_rejected_non_en": 8630,
+          "words": 9984161,
+          "source_file": "cc2026_124.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091677690.83/wet/CC-MAIN-20260818102432-20260818132432-00049.warc.wet.gz",
+          "bytes": 60990552,
+          "sha256": "f8a8f7440df42cd1c8e7ec863769d88f7b03df951d8acf6d541b9c499c110b66",
+          "docs_en": 12101,
+          "docs_seen": 20751,
+          "docs_rejected_non_en": 8650,
+          "words": 9436881,
+          "source_file": "cc2026_121.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091678553.88/wet/CC-MAIN-20260818193129-20260818223129-00647.warc.wet.gz",
+          "bytes": 64247765,
+          "sha256": "e7a962aab0c902011e589cdf438837826c42d9b982dd69cf6b1b9ff9f2a442bb",
+          "docs_en": 12054,
+          "docs_seen": 20570,
+          "docs_rejected_non_en": 8516,
+          "words": 10313445,
+          "source_file": "cc2026_126.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091678506.74/wet/CC-MAIN-20260818162855-20260818192855-00927.warc.wet.gz",
+          "bytes": 62832382,
+          "sha256": "cb97f7e898b553415fec03cc230ce2f77f2e9bb3e819fec48c805807f65ddd74",
+          "docs_en": 11904,
+          "docs_seen": 20455,
+          "docs_rejected_non_en": 8551,
+          "words": 10072561,
+          "source_file": "cc2026_125.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091679845.84/wet/CC-MAIN-20260818223410-20260819013410-00366.warc.wet.gz",
+          "bytes": 64119448,
+          "sha256": "c1dc56d85b2bf44c7f42f0914584ea4d18005d378e044821a0f47da76c6369f3",
+          "docs_en": 12057,
+          "docs_seen": 20739,
+          "docs_rejected_non_en": 8682,
+          "words": 10252319,
+          "source_file": "cc2026_127.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385710.35/wet/CC-MAIN-20260814114419-20260814144419-00834.warc.wet.gz",
+          "bytes": 63437869,
+          "sha256": "f61986f11cabafb11cebf4d2f70721e85ecd29aa698399320177a2b61bac7d34",
+          "docs_en": 11974,
+          "docs_seen": 20808,
+          "docs_rejected_non_en": 8834,
+          "words": 10259104,
+          "source_file": "cc2026_079.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385415.17/wet/CC-MAIN-20260811072451-20260811102451-00654.warc.wet.gz",
+          "bytes": 62100106,
+          "sha256": "9fbcb016fb9ea4b89dd48d594d054517467bd592555a28698d595e765e03c1f5",
+          "docs_en": 12177,
+          "docs_seen": 20649,
+          "docs_rejected_non_en": 8472,
+          "words": 9867094,
+          "source_file": "cc2026_044.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385295.50/wet/CC-MAIN-20260809214541-20260810004541-00863.warc.wet.gz",
+          "bytes": 64887031,
+          "sha256": "b0a5ff53864b6f873142ceb5192ddd5fb510bde946c95d762f965561a9aa9de1",
+          "docs_en": 11959,
+          "docs_seen": 20780,
+          "docs_rejected_non_en": 8821,
+          "words": 10622745,
+          "source_file": "cc2026_029.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385821.41/wet/CC-MAIN-20260815060346-20260815090346-00589.warc.wet.gz",
+          "bytes": 66229144,
+          "sha256": "88c02077a2f3d7726e65bc4df3677d340b5705fdc75da3b102acd5b207378f8f",
+          "docs_en": 12023,
+          "docs_seen": 20889,
+          "docs_rejected_non_en": 8866,
+          "words": 10662481,
+          "source_file": "cc2026_087.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091675778.67/wet/CC-MAIN-20260818011649-20260818041649-00891.warc.wet.gz",
+          "bytes": 63024440,
+          "sha256": "9536a9762773284419ff4b22f78f4557ffd65fb7aca1b9e6dd1738f69433d1a5",
+          "docs_en": 12043,
+          "docs_seen": 20601,
+          "docs_rejected_non_en": 8558,
+          "words": 10146927,
+          "source_file": "cc2026_118.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385836.20/wet/CC-MAIN-20260815120940-20260815150940-00028.warc.wet.gz",
+          "bytes": 64513961,
+          "sha256": "16b97947a5b8bac01dd6cb176ad8c6a76ebc0b281c87efdf7c04c978df10b7f7",
+          "docs_en": 12257,
+          "docs_seen": 20998,
+          "docs_rejected_non_en": 8741,
+          "words": 10465506,
+          "source_file": "cc2026_089.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385594.25/wet/CC-MAIN-20260813172703-20260813202703-00359.warc.wet.gz",
+          "bytes": 66892227,
+          "sha256": "3a04a041e96a4a67f5b7a61a59c563663698cd4cc31ec77c0fa1c08b111f5a88",
+          "docs_en": 12033,
+          "docs_seen": 20476,
+          "docs_rejected_non_en": 8443,
+          "words": 10542502,
+          "source_file": "cc2026_070.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385553.12/wet/CC-MAIN-20260813050936-20260813080936-00762.warc.wet.gz",
+          "bytes": 62068353,
+          "sha256": "c0cd36e8b7786037c0c006164b41ffe4d0c449162f477167b6dfea09bdb2f928",
+          "docs_en": 11923,
+          "docs_seen": 20811,
+          "docs_rejected_non_en": 8888,
+          "words": 9466990,
+          "source_file": "cc2026_065.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385438.28/wet/CC-MAIN-20260811193657-20260811223657-00251.warc.wet.gz",
+          "bytes": 63579922,
+          "sha256": "476ff8a2f94d4ff35306c0f180a40e6947541ab69bcfca1570847bb7c59cdc24",
+          "docs_en": 12055,
+          "docs_seen": 20768,
+          "docs_rejected_non_en": 8713,
+          "words": 10244577,
+          "source_file": "cc2026_049.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385328.58/wet/CC-MAIN-20260810130157-20260810160157-00180.warc.wet.gz",
+          "bytes": 63978924,
+          "sha256": "3e9947b3590012da33c283995af53ae4fc84c547959ee6516b6ce6dfa8b13840",
+          "docs_en": 12065,
+          "docs_seen": 20617,
+          "docs_rejected_non_en": 8552,
+          "words": 10398082,
+          "source_file": "cc2026_035.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385328.36/wet/CC-MAIN-20260810095832-20260810125832-00460.warc.wet.gz",
+          "bytes": 67003194,
+          "sha256": "1345064d62480764a8ee3e184fb91ce73401a70da36a6f74d883148f8b10a1ce",
+          "docs_en": 12141,
+          "docs_seen": 20965,
+          "docs_rejected_non_en": 8824,
+          "words": 10734872,
+          "source_file": "cc2026_034.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091384984.23/wet/CC-MAIN-20260807145234-20260807175234-00878.warc.wet.gz",
+          "bytes": 63958452,
+          "sha256": "ba27e24cba32a72283a6901485983a8289028629449725fad114b7f77c6243c5",
+          "docs_en": 12184,
+          "docs_seen": 21131,
+          "docs_rejected_non_en": 8947,
+          "words": 9850346,
+          "source_file": "cc2026_004.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385116.40/wet/CC-MAIN-20260808030320-20260808060320-00475.warc.wet.gz",
+          "bytes": 65013562,
+          "sha256": "8b9d98967cfd4ac572c893656ebc63c874d52e2fa2823873d1b781e001cb9390",
+          "docs_en": 12056,
+          "docs_seen": 20994,
+          "docs_rejected_non_en": 8938,
+          "words": 10329938,
+          "source_file": "cc2026_009.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385044.1/wet/CC-MAIN-20260808000048-20260808030048-00755.warc.wet.gz",
+          "bytes": 65560973,
+          "sha256": "1dd9dfe0eefb1abc25acf26982aa6e977426ed5d3c4a511c00eb4c0ea1f9475a",
+          "docs_en": 12136,
+          "docs_seen": 21214,
+          "docs_rejected_non_en": 9078,
+          "words": 10505351,
+          "source_file": "cc2026_008.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385184.15/wet/CC-MAIN-20260808182008-20260808212008-00511.warc.wet.gz",
+          "bytes": 65378721,
+          "sha256": "6cd21f3432e221f8bac47e1d8962d98248437aa76d4700de0aaae35d82e7d946",
+          "docs_en": 12323,
+          "docs_seen": 21242,
+          "docs_rejected_non_en": 8919,
+          "words": 10188616,
+          "source_file": "cc2026_016.wet.gz"
+        },
+        {
+          "kind": "cc_wet",
+          "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-34/segments/1786091385166.7/wet/CC-MAIN-20260808151638-20260808181638-00072.warc.wet.gz",
+          "bytes": 66849925,
+          "sha256": "abd7dfd7e5dbc936a6832dc41c0a7160ae990d26393b3bbe4a24dc78d732bf44",
+          "docs_en": 12168,
+          "docs_seen": 21007,
+          "docs_rejected_non_en": 8839,
+          "words": 11034088,
+          "source_file": "cc2026_014.wet.gz"
+        }
+      ]
+    }
+  },
+  "anchors_provenance": {
+    "cefrj": {
+      "file": "olp-en-cefrj/cefrj-vocabulary-profile-1.5.csv",
+      "name": "CEFR-J Wordlist Version 1.5 (Tono, TUFS)",
+      "url": "http://www.cefr-j.org/download.html",
+      "license": "Free for research & commercial use with citation (Tono Lab, TUFS)",
+      "sha256": "b0dd3c635f1c9a4fdf1490c7e5b7c48e8bbe55b652ad0c9860a95f98e10ae498"
+    },
+    "octanove": {
+      "file": "olp-en-cefrj/octanove-vocabulary-profile-c1c2-1.0.csv",
+      "name": "Octanove Vocabulary Profile C1/C2 v1.0",
+      "url": "https://github.com/openlanguageprofiles/olp-en-cefrj",
+      "license": "CC BY-SA 4.0",
+      "sha256": "18c33a407f2f89f7b8de9671c6d45fe3ea0bce45e7d2d7dcaab48d73e0f7b380"
+    },
+    "ngsl": {
+      "files": [
+        "ngsl/NGSL-101-by-band-qq9o.xlsx",
+        "ngsl/NGSL-101-with-SFI.xlsx",
+        "ngsl/NGSL-Spoken-101.xlsx"
+      ],
+      "name": "New General Service List 1.01 (Browne, Culligan, Phillips)",
+      "url": "https://www.newgeneralservicelist.com/ (mirror: kaggle.com/datasets/jimregan/new-general-service-list)",
+      "license": "CC BY-SA 4.0",
+      "sha256": [
+        "1760c9257b19d8a0a93251f491d4575f53c387539338e393b07a7ee760dc09d1",
+        "27cdf37f1a84cfe7493ea3b6a9b5281371ccd62aa1bb2aadcbfe071249477417",
+        "0dea8bf395e06820da2d14a58987e26bf3b0adf4cdaebb7f8a749f48e8cbb0b5"
+      ]
+    },
+    "nawl": {
+      "file": "nawl/NAWL_10_lemmatized_for_research.csv",
+      "name": "New Academic Word List 1.0 (Browne, Culligan, Phillips)",
+      "url": "http://www.newgeneralservicelist.org/nawl-new-academic-word-list (mirror: kaggle jimregan)",
+      "license": "CC BY-SA 4.0",
+      "sha256": "f5690268ded5d92b0909baced5b6a083c420c89d2a4a4a5e916062c558cf5db3"
+    },
+    "bsl": {
+      "file": "misc/bsl.csv",
+      "name": "Business Service List 1.01",
+      "url": "https://www.newgeneralservicelist.com/",
+      "license": "CC BY-SA 4.0 (NGSL project)",
+      "sha256": "9f11df07de3eb073f822ddf20cb40c2f04a42b5fc05e34fbe03fe9c5252f7bae"
+    },
+    "bnc_coca": {
+      "file": "misc/bnc_coca_25k.csv",
+      "name": "BNC/COCA 25,000 frequency bands",
+      "url": "https://www.wordfrequency.info/ (mirror github antdurrant/word.lists)",
+      "license": "Free use with attribution (wordfrequency.info)",
+      "sha256": "4db8bfb2adff7d819d7a89043d0fd6575e156c1ca28cf7ce8d271303769278c7"
+    },
+    "wordfreq": {
+      "name": "wordfreq v3.x (Speer), en top 200k",
+      "url": "https://github.com/rspeer/wordfreq",
+      "license": "Apache-2.0 code; CC BY-SA 4.0 data (aggregate; validation/baseline only)",
+      "version": "3.x"
+    },
+    "gates": {
+      "wordnet": "Princeton WordNet 3.x via NLTK (WordNet License, attribution)",
+      "words_corpus": "NLTK words corpus (Unix English words, public domain)",
+      "words_alpha": "dwyl/english-words (MIT), sha256 3ed0c94610d8bcf7c11bbb49c56aa49c7234d32b66824df91f554169e572da48",
+      "cmudict": "CMU Pronouncing Dictionary 0.7b (BSD-like), sha256 b6b3efc0a34809353b852d7fd251959f1da5c39c9b6946b5ae80f52b61d084ea"
+    }
+  },
+  "cefr_label_cv": {
+    "accuracy": 0.3814,
+    "macro_f1": 0.3829
+  },
+  "validation": {
+    "exactly_TOTAL": true,
+    "unique": true,
+    "all_valid_words": true,
+    "one_level_each": true,
+    "level_counts": {
+      "A1": 1000,
+      "A2": 1000,
+      "B1": 1000,
+      "B2": 1000,
+      "C1": 1000
+    },
+    "direct_vs_model_labels": {
+      "cefrj-v1.5": 3898,
+      "model": 437,
+      "octanove-c1c2-v1.0": 665
+    }
+  },
+  "stats": {
+    "words_analyzed": {
+      "fineweb": 7545397544,
+      "fwedu": 1509381045,
+      "wiki": 2172583977,
+      "subs": 1103261872,
+      "cc2026": 1301987532
+    },
+    "total_words": 13632611970,
+    "files_processed": {
+      "fineweb": 115,
+      "fwedu": 18,
+      "wiki": 110,
+      "subs": 1,
+      "cc2026": 128
+    },
+    "source_presence_distribution": {
+      "5": 4953,
+      "4": 46,
+      "3": 1
+    },
+    "pct_in_all_5_sources": 99.06,
+    "pct_in_4plus": 99.98,
+    "mean_recent_share": NaN,
+    "mean_newest_2025_26_share": NaN,
+    "confidence_mean": 0.9205,
+    "held_out_coverage": {
+      "fineweb": {
+        "held_words": 7565444,
+        "covered": 5719128,
+        "coverage": 0.756
+      },
+      "fwedu": {
+        "held_words": 1517451,
+        "covered": 1121024,
+        "coverage": 0.7388
+      },
+      "wiki": {
+        "held_words": 2283599,
+        "covered": 1504095,
+        "coverage": 0.6587
+      },
+      "subs": {
+        "held_words": 1102508,
+        "covered": 913927,
+        "coverage": 0.829
+      },
+      "cc2026": {
+        "held_words": 1216026,
+        "covered": 664997,
+        "coverage": 0.5469
+      },
+      "overall": {
+        "held_words": 13685028,
+        "covered": 9923171,
+        "coverage": 0.7251
+      }
+    }
+  },
+  "oxford_comparison": {
+    "note": "Oxford 5000 used EXTERNALLY for comparison only; never in LexiCore construction.",
+    "oxford_reference_file": "anchors/oxford-5k.csv (mirror: github nalgeon/words)",
+    "lexicore_size": 5000,
+    "oxford_singleword_size": 4928,
+    "overlap": 3526,
+    "jaccard": 0.5508,
+    "overlap_pct_of_lexicore": 70.52,
+    "lexicore_only": 1474,
+    "oxford_only": 1402,
+    "level_agreement_on_overlap_exact": 0.466,
+    "level_agreement_within_one": 0.8659,
+    "weighted_kappa_quadratic": 0.7124,
+    "crosstab_rows_lexicore_cols_oxford": {
+      "A1": {
+        "A1": 620,
+        "A2": 178,
+        "B1": 52,
+        "B2": 25,
+        "C1": 11
+      },
+      "A2": {
+        "A1": 133,
+        "A2": 344,
+        "B1": 220,
+        "B2": 150,
+        "C1": 18
+      },
+      "B1": {
+        "A1": 26,
+        "A2": 119,
+        "B1": 225,
+        "B2": 358,
+        "C1": 129
+      },
+      "B2": {
+        "A1": 4,
+        "A2": 37,
+        "B1": 65,
+        "B2": 268,
+        "C1": 283
+      },
+      "C1": {
+        "A1": 7,
+        "A2": 8,
+        "B1": 6,
+        "B2": 54,
+        "C1": 186
+      }
+    },
+    "stats_lexicore_only": {
+      "n": 1474,
+      "mean_recent_share": null,
+      "mean_newest_share": null,
+      "mean_wordfreq_zipf2021": 3.734
+    },
+    "stats_oxford_only": {
+      "n": 1402,
+      "mean_recent_share": null,
+      "mean_newest_share": null,
+      "mean_wordfreq_zipf2021": 4.072
+    },
+    "stats_overlap": {
+      "n": 3526,
+      "mean_recent_share": null,
+      "mean_newest_share": null,
+      "mean_wordfreq_zipf2021": 4.583
+    }
+  },
+  "artifacts": {
+    "LexiCore_5000.csv": {
+      "bytes": 303824,
+      "sha256": "49ae7a92ef5a9301286a6607f2f2e1e4b8a0f381784ad65996c36af187854de4"
+    },
+    "LexiCore_5000.json": {
+      "bytes": 960335,
+      "sha256": "f6b0b0567a9a5678feb9be675b4994162403e200d2b9feee7960524a7421bdf8"
+    },
+    "LexiCore_5000.txt": {
+      "bytes": 39223,
+      "sha256": "56d4fd064ff7e60c285382968a6e742d88ca2e95cea4b84ebecb687a89864faa"
+    },
+    "oxford_comparison_sets.csv": {
+      "bytes": 82396,
+      "sha256": "d14dffa352bd6859a4dbbef91684130f28392dd5d24bfc4ee552668beed821d0"
+    }
+  }
+}
